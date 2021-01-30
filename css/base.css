@@ -1,14 +1,18 @@
 @charset "UTF-8";
-html{
-    font-size: 62.5%;/*16px*62.5%=10px*/
-    /* 1rem = 10px */
+html {
+  font-size: 62.5%; /*16px*62.5%=10px*/
+  /* 1rem = 10px */
 }
-body{
-    box-sizing: border-box;
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", "Yu Gothic", "ヒラギノ角ゴシック Pro",
+    "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", "HiraKakuProN-W3",
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo", "メイリオ",
+    "MSPゴシック", sans-serif;
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
-a{
-	text-decoration: none;	
+a {
+  text-decoration: none;
 }
