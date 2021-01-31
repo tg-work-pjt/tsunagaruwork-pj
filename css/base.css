@@ -16,3 +16,14 @@ li {
 a {
   text-decoration: none;
 }
+#container{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media screen and (min-width:768px) {
+  /*PC版のスタイルはここに記載する*/
+  #container{
+    margin-left: 140px;
+    margin-right: 140px;
+  }
+}
