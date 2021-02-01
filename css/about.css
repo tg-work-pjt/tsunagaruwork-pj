@@ -1,0 +1,44 @@
+.about {
+    font-size: 1.4rem;
+    font-family: "Noto Sans Japanese";
+}
+h2.about__header-title span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+h2.about__header-title em {
+    font-size: 6rem;
+    font-style: normal;
+    color: #fff;
+    -webkit-text-stroke: 1px #EA5504;
+    font-family: "Montserrat";
+    letter-spacing: 3px;
+}
+p.about__header-subtitle {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 38px;
+}
+
+.about__contents-organaizer-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.about__contents-organaizer-list-item {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about__contents-imgbox {
+    flex: 0 0 25%;
+}
+.about__contents-img {
+    max-width: 100%;
+    height: auto;
+}
+.about__contents-textbox {
+    flex: 0 0 70%
+}
