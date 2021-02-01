@@ -3,6 +3,9 @@
     font-family: "Noto Sans Japanese";
     color: #222;
 }
+.feature-header__title {
+    line-height: 1.1;
+}
 .feature-header__title--size-small {
     display: block;
     font-size: 1.2rem;
@@ -20,16 +23,22 @@
 .feature-header__subtitle {
     font-size: 1.6rem;
     font-weight: bold;
-    margin-top: 38px;
+    margin-top: 37px;
+    letter-spacing: 0.8px;
+    line-height: 1.8;
 }
 .feature-header__subtitle--color {
     color: #EA5504;
+}
+.feature-header__description {
+    line-height: 1.75;
+    margin-top: 27px;
 }
 .feature-contents {
     position: relative;
 }
 .feature-contents__list {
-    margin-top: 50px
+    margin-top: 115px
 }
 .feature-contents__item {
     color: #fff;
@@ -40,27 +49,42 @@
     z-index: 100;
     margin: -40px auto 0;
 }
+.feature-contents__item:last-child {
+    margin-top: -17px;
+}
 .feature-contents__img {
     max-width: 100%;
     width: 100%;
     height: auto;
 }
-.feature-contents-text {
+.feature-contents__text {
     position: absolute;
-    top: 20%;
+    top: 18%;
     left: 50%;
     transform: translateX(-50%);
-    width: 65%;
+    width: 68%;
+}
+.feature-contents__text--second {
+    top: 22%;
+}
+.feature-contents__text--third {
+    top: 16%;
 }
 .feature-contents__title {
     text-align: center;
     font-size: 2.4rem;
     font-weight: bold;
     margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.feature-contents__description {
+    margin-top: 22px;
+    line-height: 1.7;
+    letter-spacing: 0.8px;
 }
 .feature-contents__contact {
     position: absolute;
-    bottom: 0;
+    bottom: 4.5%;
 }
 .feature-contents__link {
     text-decoration: underline;
