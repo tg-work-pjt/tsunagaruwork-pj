@@ -2,22 +2,65 @@
     font-size: 1.4rem;
     font-family: "Noto Sans Japanese";
 }
+.feature .feature__header h2.feature__header-title span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
 .feature .feature__header h2.feature__header-title em {
     font-size: 6rem;
     font-style: normal;
     color: #fff;
     -webkit-text-stroke: 1px #EA5504;
     font-family: "Montserrat";
+    letter-spacing: 3px;
 }
 .feature .feature__header p.feature__header-subtitle {
     font-size: 1.6rem;
     font-weight: bold;
+    margin-top: 38px;
 }
 .feature .feature__header p.feature__header-subtitle span {
     color: #EA5504;
 }
-
-
+.feature .feature__contents {
+    position: relative;
+}
+.feature .feature__contents ul {
+    margin-top: 50px
+}
+.feature .feature__contents ul li {
+    color: #fff;
+    position: relative;
+    margin: -40px calc(50% - 50vw) 0;
+}
+.feature .feature__contents ul li:nth-child(2) {
+    z-index: 100;
+    margin: -40px auto 0;
+}
+.feature .feature__contents ul li dl {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 73%
+}
+.feature .feature__contents ul li img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.feature .feature__contents ul li dl dt {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.feature .feature__contents .feature__contents-contact {
+    position: absolute;
+    bottom: 0;
+}
 
 @media screen and (min-width:768px) {
 
