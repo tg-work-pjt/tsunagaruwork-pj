@@ -1,0 +1,24 @@
+.feature {
+    font-size: 1.4rem;
+    font-family: "Noto Sans Japanese";
+}
+.feature .feature__header h2.feature__header-title em {
+    font-size: 6rem;
+    font-style: normal;
+    color: #fff;
+    -webkit-text-stroke: 1px #EA5504;
+    font-family: "Montserrat";
+}
+.feature .feature__header p.feature__header-subtitle {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.feature .feature__header p.feature__header-subtitle span {
+    color: #EA5504;
+}
+
+
+
+@media screen and (min-width:768px) {
+
+}
