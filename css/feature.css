@@ -1,6 +1,7 @@
 .feature {
     font-size: 1.4rem;
     font-family: "Noto Sans Japanese";
+    color: #222;
 }
 .feature-header__title--size-small {
     display: block;
@@ -60,6 +61,10 @@
 .feature-contents__contact {
     position: absolute;
     bottom: 0;
+}
+.feature-contents__link {
+    text-decoration: underline;
+    color: #222;
 }
 
 @media screen and (min-width:768px) {
