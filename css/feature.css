@@ -2,6 +2,11 @@
     font-size: 1.4rem;
     font-family: "Noto Sans Japanese";
     color: #222;
+    background-image: url(../img/parts/background/tw_gunya_sp/gunya_002.png), url(../img/parts/background/tw_gunya_sp/gunya_003.png);
+    background-position: 0 0, 100% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 165px
 }
 .feature-header__title {
     line-height: 1.1;
