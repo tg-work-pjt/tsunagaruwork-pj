@@ -2,13 +2,13 @@
     font-size: 1.4rem;
     font-family: "Noto Sans Japanese";
 }
-.feature .feature__header h2.feature__header-title span {
+.feature-header__title--size-small {
     display: block;
     font-size: 1.2rem;
     font-weight: bold;
     line-height: 1.3;
 }
-.feature .feature__header h2.feature__header-title em {
+.feature-header__title--size-big {
     font-size: 6rem;
     font-style: normal;
     color: #fff;
@@ -16,48 +16,48 @@
     font-family: "Montserrat";
     letter-spacing: 3px;
 }
-.feature .feature__header p.feature__header-subtitle {
+.feature-header__subtitle {
     font-size: 1.6rem;
     font-weight: bold;
     margin-top: 38px;
 }
-.feature .feature__header p.feature__header-subtitle span {
+.feature-header__subtitle--color {
     color: #EA5504;
 }
-.feature .feature__contents {
+.feature-contents {
     position: relative;
 }
-.feature .feature__contents ul {
+.feature-contents__list {
     margin-top: 50px
 }
-.feature .feature__contents ul li {
+.feature-contents__item {
     color: #fff;
     position: relative;
     margin: -40px calc(50% - 50vw) 0;
 }
-.feature .feature__contents ul li:nth-child(2) {
+.feature-contents__item:nth-child(2) {
     z-index: 100;
     margin: -40px auto 0;
 }
-.feature .feature__contents ul li dl {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 73%
-}
-.feature .feature__contents ul li img {
+.feature-contents__img {
     max-width: 100%;
     width: 100%;
     height: auto;
 }
-.feature .feature__contents ul li dl dt {
+.feature-contents-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65%;
+}
+.feature-contents__title {
     text-align: center;
     font-size: 2.4rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
-.feature .feature__contents .feature__contents-contact {
+.feature-contents__contact {
     position: absolute;
     bottom: 0;
 }
