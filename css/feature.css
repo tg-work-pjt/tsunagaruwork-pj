@@ -89,13 +89,13 @@
     text-align: center;
     font-size: 2.4rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 8%;
     letter-spacing: 1px;
 }
 .feature-contents__description {
-    margin-top: 22px;
     line-height: 1.7;
     letter-spacing: 0.8px;
+    text-align: justify;
 }
 .feature-contents__contact {
     position: absolute;
@@ -109,7 +109,7 @@
 @media screen and (min-width:768px) {
 .feature {
     background-image: url(../img/parts/background/bk_gunya_pc/gunya_002.png);
-    background-position: 0 85%;
+    background-position: 0 73%;
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
@@ -136,12 +136,14 @@
 }
 .feature-header__description {
     letter-spacing: 0.67px;
+    margin-top: 32px;
 }
 
 .feature-contents__list {
     display: flex;
     justify-content: center;
     align-items: top;
+    margin-top: 58px;
 }
 .feature-contents__item {
     margin: -8px -40px 0 0;
@@ -154,6 +156,19 @@
 .feature-contents__item:last-child {
     margin: -17px 0 0 -10px;
     width: 41%;
+}
+.feature-contents__text {
+    top: 17%;
+    left: calc(50% - 12px);
+}
+.feature-contents__text--second {
+    top: 15%;
+    left: 50%;
+    width: 72%;
+}
+.feature-contents__text--third {
+    top: calc(17% + 7px);
+    left: calc(50% + 5px)
 }
 .feature-contents__title {
     font-size: min(max(14px, calc(0.875rem + ((1vw - 7.68px) * 2.8428))), 31px);
