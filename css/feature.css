@@ -107,6 +107,12 @@
 }
 
 @media screen and (min-width:768px) {
+.feature {
+    background-image: url(../img/parts/background/bk_gunya_pc/gunya_002.png);
+    background-position: 0 85%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
 .feature-inner {
     padding: 0 140px;
 }
