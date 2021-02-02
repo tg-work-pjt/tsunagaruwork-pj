@@ -6,7 +6,11 @@
     background-position: 0 0, 100% 100%;
     background-repeat: no-repeat;
     background-size: contain;
+    margin: 0 calc(50% - 50vw);
     padding-top: 165px
+}
+.feature-inner {
+    padding: 0 20px;
 }
 .feature-header__title {
     line-height: 1.1;
