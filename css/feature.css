@@ -132,4 +132,22 @@
     letter-spacing: 0.67px;
 }
 
+.feature-contents__list {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+.feature-contents__item {
+    margin: -8px -40px 0 0;
+    width: 43%;
+}
+.feature-contents__item:nth-child(2) {
+    margin: 0;
+    width: 39%;
+}
+.feature-contents__item:last-child {
+    margin: -17px 0 0 -10px;
+    width: 41%;
+}
+
 }
