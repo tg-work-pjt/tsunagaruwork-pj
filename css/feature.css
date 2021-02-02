@@ -155,6 +155,12 @@
     margin: -17px 0 0 -10px;
     width: 41%;
 }
+.feature-contents__title {
+    font-size: min(max(14px, calc(0.875rem + ((1vw - 7.68px) * 2.8428))), 31px);
+}
+.feature-contents__description {
+    font-size: min(max(10px, calc(0.625rem + ((1vw - 7.68px) * 1.3378))), 18px);
+}
 
 .feature-contents__contact {
     right: 0;
