@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>つながるわーく|デジハリ＆デジLIG生のポートフォリオ・作品集</title>
-    <meta name=”description” content=”つながる「わ」で広がるクリエイティブ。私たち「つながるわーく」は、UI/UXデザイン、コーディング、イラスト、ロゴ制作、動画編集など、それぞれの強みを持ったクリエイティブ集団です。あなたのアイデアをカタチにちょっと欲しいがここにあります。”> 
+    <meta name= "description" content="つながる「わ」で広がるクリエイティブ。私たち「つながるわーく」は、UI/UXデザイン、コーディング、イラスト、ロゴ制作、動画編集など、それぞれの強みを持ったクリエイティブ集団です。あなたのアイデアをカタチにちょっと欲しいがここにあります。"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/destyle.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="icon" href="img/logo/logo_symbol_or_A.png" />
     <!-- 自身のお名前のコメントのFrom〜End間に作成したCSSを読み込んでください -->
     <!-- From mogu -->
+    <link rel="stylesheet" href="css/navigation.css">
     <!-- End mogu -->
     <!-- From kitamu -->
     <!-- End kitamu -->
@@ -24,19 +26,52 @@
 
 <body>
     <div id="global-container">
-        <div id="container">
-            <!-- //From mogusan -->
-            <div class="mobile-menu__cover"></div>
-            <div class="navigation-trigger"></div>
-            <header class=header>
-                <div class="logo"></div>
-                <nav class="header-navigation"></nav>
-                <button>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <!-- //From mogusan -->
+        <div class="mobile-menu__cover"></div>
+        <div class="navigation-trigger"></div>
+        <header class="header" id="header">
+            <h2 class="header-logo"><img class="header-logo-img" src="img/logo/logo_text_or.png" alt="つながるわーくのロゴ"></h2>
+            <div class="header-navigation-mobile" id="header-navigation-mobile">
+                <button class="header-navigation-mobile--button">
+                    <span id="header-navigation-mobile--button--top" class="header-navigation-mobile--button--top"></span>
+                    <span id="header-navigation-mobile--button--middle" class="header-navigation-mobile--button--middle"></span>
+                    <span id="header-navigation-mobile--button--bottom" class="header-navigation-mobile--button--bottom"></span>
                 </button>
-            </header>
+            </div>
+            <nav class="header-navigation">
+                <ul class="header-navigation--list">
+                    <li>
+                        <a class="header-navigation--item" href="#feature">
+                            <div class="header-navigation--item--title">feature</div>
+                            <div class="header-navigation--item--subtitle">特徴</div>
+                            <div class="header-navigation--item--line"></div>        
+                        </a>
+                    </li>
+                    <li class="header-navigation--item">
+                        <a  class="header-navigation--item" href="#member">
+                            <div class="header-navigation--item--title">members</div>
+                            <div class="header-navigation--item--subtitle">メンバー</div>
+                            <div class="header-navigation--item--line"></div>
+                        </a>
+                    </li>
+                    <li class="header-navigation--item">
+                        <a  class="header-navigation--item" href="#about">
+                            <div class="header-navigation--item--title">about</div>
+                            <div class="header-navigation--item--subtitle">私たちについて</div>
+                            <div class="header-navigation--item--line"></div>
+                        </a>
+                    </li>
+                    <li class="header-navigation--item">
+                        <a  class="header-navigation--item" href="https://forms.gle/9knF7SF4YyLyJJwv9">
+                            <div class="header-navigation--item--title">contact</div>
+                            <div class="header-navigation--item--subtitle">ご依頼・お問い合わせ</div>
+                            <div class="header-navigation--item--line"></div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="container">
             <!-- //End mogusan -->
 
             <!-- //From kitamu -->
@@ -105,21 +140,51 @@
                 <!-- End sasakisan -->
             </footer>
         </div>
-        <div class="mobile-menu">
+        <nav id ="mobile-menu" class="mobile-menu">
             <!-- From mogusan -->
-            <div class="mobile-menuP__header">
-                <!-- ハンバーガーメニューの白い部分 -->
-            </div>
             <div class="mobile-menu__inner">
+                <ul class="mobile-menu-list">
+                    <li class="mobile-menu-item">
+                        <a class="header-navigation--item" href="#feature" onclick="SwitchNavigation()">
+                            <div class="mobile-menu-title">feature</div>
+                            <div class="mobile-menu-subtitle">特徴</div>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a  class="header-navigation--item" href="#member" onclick="SwitchNavigation()">
+                            <div class="mobile-menu-title">members</div>
+                            <div class="mobile-menu-subtitle">メンバー</div>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a  class="header-navigation--item" href="#about" onclick="SwitchNavigation()">
+                            <div class="mobile-menu-title">about</div>
+                            <div class="mobile-menu-subtitle">私たちについて</div>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a  class="header-navigation--item" href="https://forms.gle/9knF7SF4YyLyJJwv9">
+                            <div class="mobile-menu-title">contact</div>
+                            <div class="mobile-menu-subtitle">ご依頼・お問い合わせ</div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="mobile-menu-symbollogo-wrapper">
+                    <img src="img/logo/logo_symbol_wh_A.png" alt="つながるわーくのシンボルのロゴ">
+                </div>
+                <div class="mobile-menu-textlogo-wrapper">
+                    <img src="img/logo/logo_text_wh.png" alt="つながるわーくの文字のロゴ">
+                </div>
             </div>
             <!-- End Mogusann -->
-        </div>
+        </nav>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- 自身のお名前のコメントのFrom〜End間に作成したJSを読み込んでください -->
     <!-- From mogu -->
+    <script src="./js/navigation.js"></script>
     <!-- End mogu -->
     <!-- From kitamu -->
     <!-- End kitamu -->
