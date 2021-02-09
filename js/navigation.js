@@ -1,15 +1,15 @@
 function SwitchNavigation(){
-    let isMenuActive = document.getElementById("mobile-menu").classList.contains("mobile-menu__active");
+    let isMenuActive = document.getElementById("mobile-menu").classList.contains("mobile-menu_active");
 
     if(isMenuActive){
-        document.getElementById("mobile-menu").classList.remove("mobile-menu__active");
-        document.getElementById("mobile-menu").classList.add("mobile-menu__inactive");
+        document.getElementById("mobile-menu").classList.remove("mobile-menu_active");
+        document.getElementById("mobile-menu").classList.add("mobile-menu_inactive");
         document.getElementById("header-navigation-mobile__button-top").classList.remove("header-navigation-mobile__button-top_close");
         document.getElementById("header-navigation-mobile__button-middle").classList.remove("header-navigation-mobile__button-middle_close");
         document.getElementById("header-navigation-mobile__button-bottom").classList.remove("header-navigation-mobile__button-bottom_close");
     }else{
-        document.getElementById("mobile-menu").classList.remove("mobile-menu__inactive");
-        document.getElementById("mobile-menu").classList.add("mobile-menu__active");
+        document.getElementById("mobile-menu").classList.remove("mobile-menu_inactive");
+        document.getElementById("mobile-menu").classList.add("mobile-menu_active");
         document.getElementById("header-navigation-mobile__button-top").classList.add("header-navigation-mobile__button-top_close");
         document.getElementById("header-navigation-mobile__button-middle").classList.add("header-navigation-mobile__button-middle_close");
         document.getElementById("header-navigation-mobile__button-bottom").classList.add("header-navigation-mobile__button-bottom_close");

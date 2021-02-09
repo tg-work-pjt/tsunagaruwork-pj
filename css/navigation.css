@@ -67,7 +67,7 @@ body{
     transform:rotate(-45deg);
     transition: all .5s;
 }
-@keyframes menu__active{
+@keyframes menu_active{
     from{
         opacity: 0;
     }
@@ -75,7 +75,7 @@ body{
         opacity: 1;
     }
 }
-@keyframes menu__inactive{
+@keyframes menu_inactive{
     0%{
         opacity: 1;
     }
@@ -98,14 +98,14 @@ body{
     padding-top: 5.6rem;
     opacity: 0;
 }
-.mobile-menu__active{
+.mobile-menu_active{
     position: fixed;
     left: 0;
-    animation: menu__active 0.5s linear 0s;
+    animation: menu_active 0.5s linear 0s;
     animation-fill-mode: forwards;
 }
-.mobile-menu__inactive{
-    animation: menu__inactive 1s linear 0s;
+.mobile-menu_inactive{
+    animation: menu_inactive 1s linear 0s;
     animation-fill-mode: forwards;
     left: 0;
     /* opacityはアニメーションで0に上書きされる */
