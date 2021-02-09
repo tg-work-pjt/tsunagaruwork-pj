@@ -1,0 +1,100 @@
+body{
+    background-color: #aaa;
+}
+.member{
+    text-align: left;
+    margin-top: 2708px;
+    border: solid 1px blue;
+    position: relative;
+}
+.member__header{
+}
+.member__subtitle {
+    font-size: 1.2rem;
+}
+.member__title{
+    font-size: 6.0rem;
+    color: transparent;
+    text-stroke: 1px #EA5403;
+    -webkit-text-stroke: 1px #EA5403;
+    width: 100%;
+    word-break : break-all;
+    text-transform: uppercase;
+}
+.member__explanation{
+    font-size: 1.6rem;
+    margin-bottom: 6.3rem;
+}
+.member__explanation__partner{
+    color: #EA5403;
+}
+.member__caption{
+    font-size: 2.0rem;
+    color: #EA5403;;
+    border-bottom:solid #EA5403 1px;
+    margin-bottom: 0.38rem;
+}
+.member__workimg{
+    width: 100%;
+}
+.member__workimg{
+    width: 100%;
+}
+.member__gunya{
+    /* background-image: url(../img/tw_gunya/gunya_002.png); */
+    background-image: url(../img/tw_gunya/gunya_001_2x.png);
+    position: absolute;
+    /* padding-bottom: calc(4002%*1365/3718);calc(100*ImageHeight/ImageWidth) */
+    padding-bottom: calc(100%*1383/1116);
+    /* padding-bottom: calc(100%*4002/3718); */
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    z-index: -10;
+    left: -20px;
+    border: solid 1px red;
+    width: calc(100% + 40px);
+    /* background-size: 100%; */
+    /* padding-bottom: calc(1(100% + 20)*1383/(375*2)); */
+}
+
+.member__gunya2{
+    position: absolute;
+    background-image: url(../gunya_002.png);
+    border:blue 1px solid;
+    padding-bottom: calc(100%*1383/1116);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    top: 100px;
+    width: calc(100% + 40px);
+}
+.member__gunya3{
+    position: absolute;
+    background-image: url(../gunya_002_.png);
+    border:blue 1px solid;
+    padding-bottom: calc(100%*1383/1116);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    top: 500px;
+    width: calc(100% + 40px);
+}
+.member__gunya4{
+    position: absolute;
+    background-image: url(../gunya_003.png);
+    border:blue 1px solid;
+    padding-bottom: calc(100%*1383/1116);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    top: 1000px;
+    width: calc(100% + 40px);
+}
+.member__gunya4{
+    position: absolute;
+    background-image: url(../gunya_003_2x.png);
+    border:blue 1px solid;
+    padding-bottom: calc(100%*1383/1116);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    top: 1500px;
+    width: calc(100% + 40px);
+}
