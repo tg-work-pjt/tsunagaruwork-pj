@@ -4,15 +4,15 @@ function SwitchNavigation(){
     if(isMenuActive){
         document.getElementById("mobile-menu").classList.remove("mobile-menu__active");
         document.getElementById("mobile-menu").classList.add("mobile-menu__inactive");
-        document.getElementById("header-navigation-mobile--button--top").classList.remove("header-navigation-mobile--button--top__close");
-        document.getElementById("header-navigation-mobile--button--middle").classList.remove("header-navigation-mobile--button--middle__close");
-        document.getElementById("header-navigation-mobile--button--bottom").classList.remove("header-navigation-mobile--button--bottom__close");
+        document.getElementById("header-navigation-mobile__button-top").classList.remove("header-navigation-mobile__button-top_close");
+        document.getElementById("header-navigation-mobile__button-middle").classList.remove("header-navigation-mobile__button-middle_close");
+        document.getElementById("header-navigation-mobile__button-bottom").classList.remove("header-navigation-mobile__button-bottom_close");
     }else{
         document.getElementById("mobile-menu").classList.remove("mobile-menu__inactive");
         document.getElementById("mobile-menu").classList.add("mobile-menu__active");
-        document.getElementById("header-navigation-mobile--button--top").classList.add("header-navigation-mobile--button--top__close");
-        document.getElementById("header-navigation-mobile--button--middle").classList.add("header-navigation-mobile--button--middle__close");
-        document.getElementById("header-navigation-mobile--button--bottom").classList.add("header-navigation-mobile--button--bottom__close");
+        document.getElementById("header-navigation-mobile__button-top").classList.add("header-navigation-mobile__button-top_close");
+        document.getElementById("header-navigation-mobile__button-middle").classList.add("header-navigation-mobile__button-middle_close");
+        document.getElementById("header-navigation-mobile__button-bottom").classList.add("header-navigation-mobile__button-bottom_close");
     }
 }
 const inPageLinkElements = document.querySelectorAll('a[href^="#"]');
