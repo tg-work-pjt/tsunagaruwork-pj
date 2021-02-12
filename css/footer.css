@@ -20,11 +20,48 @@ a {
   margin-left: 20px;
   margin-right: 20px;
 }
+.footer__text-center{
+  text-align: center;
+}
 .footer__studio-logo{
-  width: 184px;
+  width: 110px;
   height: auto;
-  margin: 0 auto 60px;
-} 
+  margin: 0 auto 71px;
+}
+.footer__inner{
+  padding-top: 77px;
+  background-image: url(../img/parts/background/tw_gunya_sp/gunya_007.png);
+}
+.footer__logo_text{
+  width: 195px;
+  height: auto;
+  margin: 0 auto 32px;
+}
+.footer__twitter{
+  position: relative;
+  width: 80px;
+  margin: 0 auto 32px;
+}
+.footer__twitter-bg{
+  width: 80px;
+  height: auto;
+}
+.footer__twitter_link{
+  display: block;
+}
+.footer__twitter_icon{
+  position: absolute;
+  top: 28px;
+  left: 24px;
+  width: 32px;
+  height: auto;
+}
+.footer__copyright{
+  text-align: center;
+  padding-bottom: 32px;
+  color:#222;
+  font-size: 1.2rem;
+}
 
 @media screen and (min-width:768px) {
   /*PC版のスタイルはここに記載する*/
@@ -32,9 +69,30 @@ a {
     margin-left: 140px;
     margin-right: 140px;
   }
-
   .footer__studio-logo{
     width: 184px;
     height: auto;
     margin: 0 auto 60px;
-  } }
+  }
+  .footer__studio-logo{
+    width: 184px;
+    margin-bottom:60px;
+  } 
+  .footer__inner{
+    padding-top: 94px;
+    background-image: url(../img/parts/background/bk_gunya_pc/gunya_006.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: calc(50% - 20px) 0;
+  }
+  .footer__logo_text{
+    width: 273px;
+    margin-bottom: 26px;
+  }
+  .footer__twitter{
+    margin-bottom: 26px;
+  }
+  .footer__copyright{
+    padding-bottom: 36px;
+  }
+}
