@@ -8,7 +8,7 @@ body{
     position: relative;
 }
 .member__header{
-
+    margin-bottom: 5.4rem;
 }
 .member__title-wrapper{
     margin-bottom: 3rem;
@@ -23,7 +23,7 @@ body{
     color: transparent;
     text-stroke: 1px #EA5403;
     -webkit-text-stroke: 1px #EA5403;
-    width: 110%;
+    width: 120%;
     word-break : break-all;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
@@ -33,7 +33,6 @@ body{
 .member-explanation{
     font-size: 1.6rem;
     width: 100%;
-    margin-bottom: 5.4rem;
     line-height: 1.9;
     font-feature-settings: "palt";
 	letter-spacing: 0.18rem;
@@ -59,9 +58,6 @@ body{
     font-feature-settings: "palt";
 	letter-spacing: 0.08rem;
 }
-.member-individual__name{
-
-}
 .member-individual__name-hiragana{
     font-feature-settings: "palt";
 	letter-spacing: 0.2rem;
@@ -72,11 +68,14 @@ body{
 .member-capitalize{
     text-transform: capitalize;
 }
-.member-individual__works-image{
+.member-individual__work{
     width: calc(100% - 0.7rem);
     margin-bottom: 2.1rem;
     position: relative;
     display: block;
+}
+.member-individual__work-image-border{
+    border:solid 0.05rem #707070;
 }
 .member-individual__vertical-frame{
     width: 0.3rem;
@@ -98,7 +97,7 @@ body{
     bottom: -0.7rem;
     right: -0.5rem;
 }
-.member-individual__works-image img{
+.member-individual__work-image{
     display: block;
     width: 100%
     
@@ -167,7 +166,9 @@ a.member-individual__sns-instagram{
     margin-top: 0.8rem;
     font-size: 1.3rem;
 }
-
+.member-individual__skill-item-movie{
+    padding: 0.5rem 2rem;
+}
 .member__sp-gunya1{
     background-image: url(../img/parts/background/tw_gunya_sp/gunya_004.png);
     position: absolute;
@@ -189,4 +190,83 @@ a.member-individual__sns-instagram{
     left: -2.0rem;
     width: calc(100% + 4rem);
     top: 579rem;
+}
+.member__pc-gunya1{
+    background-image: url(../img/parts/background/bk_gunya_pc/gunya_004.png);
+    position: absolute;
+    padding-bottom: calc(62.891344%*1046/1331);
+    background-size: 100% auto; 
+    background-repeat: no-repeat;
+    z-index: -12;
+    width: calc(62.891344%);
+    /* top: 175rem;
+    left: 45rem; */
+    bottom: 30rem;
+    right: -4rem;
+    /* background-color: blueviolet; */
+}
+.member__pc{
+    display: none;
+}
+.member__sp{
+    display: block;
+}
+@media screen and (min-width:768px) {
+    .member__pc{
+        display: block;
+    }
+    .member__sp{
+        display: none;
+    }
+    .member__header{
+        margin-bottom: 9.5rem;
+    }
+    .member__title-wrapper{
+        margin-bottom: 4.2rem;
+        padding-bottom: 11.8rem;
+    }
+    .member__subtitle {
+        font-size: 1.6rem;
+        font-feature-settings: "palt";
+        letter-spacing: 0.3rem;
+        margin-left: 0.5rem;
+    }
+    .member__title{
+        font-size: 10rem;
+        letter-spacing: 0.5rem;
+    }
+    .member-explanation{
+        font-size: 2rem;
+        width: 100%;
+        line-height: 1.8;
+        font-feature-settings: "palt";
+        letter-spacing: 0.25rem;
+        margin-left: 0.8rem;
+    }
+    .member__contents{
+        display: flex;
+        flex-wrap : wrap;
+    }
+    .member-individual{
+        margin-bottom: 4.8rem;
+        width: 33.333%;
+        padding: 0 0.8rem;
+    }
+    .member-individual__work{
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (min-width:768px) and ( max-width:950px) {
+    /* タブレット用に微調整 */
+    .member-individual{
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+@media screen and (min-width:950px) and ( max-width:1330px) {
+    /* 作品を3列にすると、一部改行が履入ってしまいデザインが崩れるためこの区間は２列 */
+    .member-individual{
+        width: 50%;
+        padding: 0 1rem;
+    }
 }
