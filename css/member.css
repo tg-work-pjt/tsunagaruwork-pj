@@ -1,7 +1,6 @@
 .member{
     text-align: left;
     margin-top: 2708px;
-    /* border: solid 1px blue; */
     position: relative;
 }
 .member__header{
@@ -14,18 +13,19 @@
 .member__subtitle {
     font-size: 1.2rem;
     line-height: 1;
+    font-weight: bold;
 }
 .member__title{
     font-size: 6.0rem;
     color: transparent;
     text-stroke: 1px #EA5403;
     -webkit-text-stroke: 1px #EA5403;
-    width: 120%;
     word-break : break-all;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     position: absolute;
-    left: -0.5rem;
+
+    white-space: nowrap;
 }
 .member-explanation{
     font-size: 1.6rem;
@@ -33,6 +33,7 @@
     line-height: 1.9;
     font-feature-settings: "palt";
 	letter-spacing: 0.18rem;
+    font-weight: bold;
 }
 .member-explanation__partner{
     color: #EA5403;
@@ -54,6 +55,7 @@
     font-size: 1.6rem;
     font-feature-settings: "palt";
 	letter-spacing: 0.08rem;
+    white-space: nowrap;
 }
 .member-individual__name-hiragana{
     font-feature-settings: "palt";
@@ -116,7 +118,6 @@
     position: relative;
 }
 .member-individual__sns{
-    margin-right: 0.2rem;
     position: absolute;
     right: 1.3rem;
     display: flex;
@@ -232,6 +233,7 @@ a.member-individual__sns-instagram{
     .member__title{
         font-size: 10rem;
         letter-spacing: 0.5rem;
+        left: -0.5rem;
     }
     .member-explanation{
         font-size: 2rem;
@@ -252,6 +254,12 @@ a.member-individual__sns-instagram{
     }
     .member-individual__work{
         margin-bottom: 2rem;
+    }
+    .member-individual__skill-list{
+        height: 7.9rem;
+    }
+    .member-individual__skill-item{
+        height: 3.05rem;
     }
 }
 @media screen and (min-width:768px) and ( max-width:950px) {
