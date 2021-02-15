@@ -24,7 +24,7 @@
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     position: absolute;
-
+    margin-bottom: 0rem;
     white-space: nowrap;
 }
 .member-explanation{
@@ -68,7 +68,7 @@
     text-transform: capitalize;
 }
 .member-individual__work{
-    width: calc(100% - 0.7rem);
+    width: calc(100% - 0.6rem);
     margin-bottom: 2.1rem;
     position: relative;
     display: block;
@@ -209,6 +209,12 @@ a.member-individual__sns-instagram{
 }
 .member__sp{
     display: block;
+}
+@media screen and ( max-width:363px) {
+    /* 幅が362px以下だと、タイトル部分がはみ出てしまうので、字間を狭める */
+    .member__title{
+        letter-spacing: 0rem;
+    }
 }
 @media screen and (min-width:768px) {
     .member__pc{
