@@ -1,6 +1,3 @@
-body{
-    background-color: #aaa;
-}
 .header{
     width: 100vw;
     height: 6.0rem;
@@ -14,6 +11,7 @@ body{
 }
 .header-logo{
     height: 4.0rem;
+    margin-bottom: 0rem;
 }
 .header-logo-img{
     height: 100%;
@@ -50,18 +48,18 @@ body{
     transition: all .5s;
 }
 
-.header-navigation-mobile__button-top_close{
+.navigation-mobile-menu_open .header-navigation-mobile__button-top{
     top: 1.9rem;
     width: 4.0rem;
     transform:rotate(45deg);
     transition: all .5s;
 }
-.header-navigation-mobile__button-middle_close{
+.navigation-mobile-menu_open .header-navigation-mobile__button-middle{
     top: 1.9rem;
     opacity: 0;
     transition: all .5s;
 }
-.header-navigation-mobile__button-bottom_close{
+.navigation-mobile-menu_open .header-navigation-mobile__button-bottom{
     bottom: 1.9rem;
     width: 4.0rem;
     transform:rotate(-45deg);
