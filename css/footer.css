@@ -17,8 +17,8 @@ a {
   text-decoration: none;
 }
 #container{
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .footer__text-center{
   text-align: center;
@@ -91,6 +91,13 @@ a {
   }
   .footer__twitter{
     margin-bottom: 26px;
+  }
+  .footer__twitter_icon{
+    opacity:1;
+    transition: 0.2s;
+  }
+  .footer__twitter_icon:hover{
+    opacity:0.7;
   }
   .footer__copyright{
     padding-bottom: 36px;
