@@ -23,9 +23,6 @@ a {
 .br-pc{
     display: none;
 }
-.firstcontent{
-    position:relative;
-}
 .firstcontent__bg{
     background-image: url(../img/parts/background/tw_gunya_sp/gunya_001.png);
     background-repeat: no-repeat;
@@ -70,14 +67,10 @@ a {
   .br-pc{
       display: block;
   }
-  .firstcontent{
-      position:relative;
-  }
 .firstcontent__bg{
-    background-image: url(../img/parts/background/bk_gunya_pc/gunya_001.png);
-    background-size: 50%;
-    background-position:-2.5em -40rem; 
+    background-image: url(../img/parts/background/bk_gunya_pc/gunyaPC@2x.png);
     background-repeat:no-repeat;
+    background-size: 40%;
 }
 .firstcontent__sentence{
     padding-top: 95px;
@@ -105,5 +98,4 @@ a {
     object-fit: cover;
     margin: auto;
 }
-
 }
