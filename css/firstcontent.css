@@ -17,16 +17,25 @@ a {
   text-decoration: none;
 }
 #container{
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .br-pc{
     display: none;
 }
+.firstcontent{
+    position:relative;
+}
 .firstcontent__bg{
     background-image: url(../img/parts/background/tw_gunya_sp/gunya_001.png);
+    position: absolute;
+    padding-bottom: calc((100% + 40px)*554/366);
+    background-size: 70% auto;
     background-repeat: no-repeat;
-    background-size: 70%;
+    z-index: -10;
+    left: -2.0rem;
+    width: calc(100% + 40px);
+    top: 0;
 }
 .firstcontent__sentence{
     padding-top: 87px;
@@ -58,8 +67,8 @@ a {
 @media screen and (min-width:768px) {
   /*PC版のスタイルはここに記載する*/
   #container{
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 140px;
+    margin-right: 140px;
   }
   .br-sp{
       display: none;
@@ -69,8 +78,14 @@ a {
   }
 .firstcontent__bg{
     background-image: url(../img/parts/background/bk_gunya_pc/gunyaPC@2x.png);
-    background-repeat:no-repeat;
-    background-size: 40%;
+    position: absolute;
+    padding-bottom: calc((100% + 280px)*1534/1296);
+    background-size: 40% auto;
+    background-repeat: no-repeat;
+    z-index: -10;
+    left: -140px;
+    width: calc(100% + 280px);
+    top: 0;
 }
 .firstcontent__sentence{
     padding-top: 95px;
