@@ -38,6 +38,7 @@
     margin-bottom: 0;
 }
 .firstcontent__img_sp{
+    display: block;
     width: 100%;
     margin-bottom: 60px;
 }
