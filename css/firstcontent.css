@@ -1,26 +1,5 @@
 @charset "UTF-8";
-html {
-  font-size: 62.5%; /*16px*62.5%=10px*/
-  /* 1rem = 10px */
-}
-body {
-  box-sizing: border-box;
-  font-family: "Montserrat", "Yu Gothic", "ヒラギノ角ゴシック Pro",
-    "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", "HiraKakuProN-W3",
-    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo", "メイリオ",
-    "MSPゴシック", sans-serif;
-}
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-#container{
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.br-pc{
+.firstcontent__br-pc{
     display: none;
 }
 .firstcontent{
@@ -40,13 +19,14 @@ a {
 .firstcontent__sentence{
     padding-top: 87px;
     text-align: center;
-    margin-bottom: 1.4rem;
+    margin: 0 10px 1.4rem;
 }
 .firstcontent__heading{
     font-size: 1.6rem;
+    line-height: 1;
     letter-spacing: 0.05em;
     font-weight: bold;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
 }
 .firstcontent__color{
     color: #ea5504;
@@ -55,6 +35,7 @@ a {
     font-size: 1.4rem;
     line-height: 2.4rem;
     letter-spacing: 0.05em;
+    margin-bottom: 0;
 }
 .firstcontent__img_sp{
     width: 100%;
@@ -66,16 +47,12 @@ a {
 
 @media screen and (min-width:768px) {
   /*PC版のスタイルはここに記載する*/
-  #container{
-    margin-left: 140px;
-    margin-right: 140px;
-  }
-  .br-sp{
+.firstcontent__br-sp{
       display: none;
-  }
-  .br-pc{
+}
+.firstcontent__br-pc{
       display: block;
-  }
+}
 .firstcontent__bg{
     background-image: url(../img/parts/background/bk_gunya_pc/gunyaPC@2x.png);
     position: absolute;
@@ -93,7 +70,7 @@ a {
 .firstcontent__heading{
     font-size: 2.0rem;
     letter-spacing: 0.05rem;
-    margin-bottom: 30px;
+    margin-bottom: 36px;
 }
 .firstcontent__text{
     font-size: 1.6rem;
@@ -108,9 +85,10 @@ a {
 }
 .firstcontent__img_pc{
     display: block;
-    width: 740px;
+    width: 782px;
     height: 420px;
     object-fit: cover;
     margin: auto;
+    padding-right: 36px;
 }
 }
