@@ -1,36 +1,20 @@
 @charset "UTF-8";
-html {
-  font-size: 62.5%; /*16px*62.5%=10px*/
-  /* 1rem = 10px */
-}
-body {
-  box-sizing: border-box;
-  font-family: "Montserrat", "Yu Gothic", "ヒラギノ角ゴシック Pro",
-    "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", "HiraKakuProN-W3",
-    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo", "メイリオ",
-    "MSPゴシック", sans-serif;
-}
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
-#container{
-  margin-left: 0px;
-  margin-right: 0px;
-}
-.footer__text-center{
+footer{
+  width: 100%;
   text-align: center;
 }
 .footer__studio-logo{
-  width: 110px;
-  height: auto;
-  margin: 0 auto 71px;
+  width: 30%;
+  height: 30%;
+   margin: 0 auto 71px;
 }
 .footer__inner{
   padding-top: 77px;
-  background-image: url(../img/parts/background/tw_gunya_sp/gunya_007.png);
+  background-image:
+   url(../img/parts/background/tw_gunya_sp/gunya_007.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 .footer__logo_text{
   width: 195px;
@@ -43,7 +27,7 @@ a {
   margin: 0 auto 32px;
 }
 .footer__twitter-bg{
-  width: 80px;
+  width: 8rem;
   height: auto;
 }
 .footer__twitter_link{
@@ -53,16 +37,15 @@ a {
   position: absolute;
   top: 28px;
   left: 24px;
-  width: 32px;
+  width: 3.2rem;
   height: auto;
 }
 .footer__copyright{
-  text-align: center;
   padding-bottom: 32px;
   color:#222;
   font-size: 1.2rem;
+  line-height: 1;
 }
-
 @media screen and (min-width:768px) {
   /*PC版のスタイルはここに記載する*/
   #container{
@@ -74,10 +57,6 @@ a {
     height: auto;
     margin: 0 auto 60px;
   }
-  .footer__studio-logo{
-    width: 184px;
-    margin-bottom:60px;
-  } 
   .footer__inner{
     padding-top: 94px;
     background-image: url(../img/parts/background/bk_gunya_pc/gunya_006.png);
@@ -94,12 +73,12 @@ a {
   }
   .footer__twitter_icon{
     opacity:1;
-    transition: 0.2s;
   }
   .footer__twitter_icon:hover{
     opacity:0.7;
   }
   .footer__copyright{
+    margin-bottom: 0;
     padding-bottom: 36px;
   }
 }
