@@ -2,15 +2,30 @@
     font-size: 1.4rem;
     font-family: "Noto Sans Japanese";
     color: #222;
-    background-image: url(../img/parts/background/tw_gunya_sp/gunya_002.png), url(../img/parts/background/tw_gunya_sp/gunya_003.png);
-    background-position: 0 0, 100% 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
     margin: 0 calc(50% - 50vw);
-    padding-top: 165px
+    position: relative;
+}
+.feature__pcbg {
+    display: none;
+}
+.feature__spbg-top {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: -9%;
+    left: 0;
+}
+.feature__spbg-bottom {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+    left: 0;
 }
 .feature-inner {
     padding: 0 20px;
+    position: relative;
+    z-index: 100;
 }
 .feature-header__title {
     line-height: 1.1;
@@ -45,6 +60,7 @@
 .feature-header__description {
     line-height: 1.75;
     margin-top: 27px;
+    letter-spacing: -0.1px;
 }
 .feature-header__description--pcOnly {
     display: none;
@@ -108,10 +124,18 @@
 
 @media screen and (min-width:768px) {
 .feature {
-    background-image: url(../img/parts/background/bk_gunya_pc/gunya_002.png);
-    background-position: 0 73%;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+    position: relative;
+}
+.feature__pcbg {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+    display: block;
+}
+.feature__spbg-top,
+.feature__spbg-bottom {
+    display: none;
 }
 .feature-inner {
     padding: 0 140px;
@@ -178,7 +202,8 @@
 }
 
 .feature-contents__contact {
-    right: 0;
+    right: 2.4%;
+    bottom: 9.2%;
 }
 
 }
