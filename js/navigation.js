@@ -4,6 +4,9 @@ class SwitchNavigation{
       this.object.button = document.querySelector("#header-navigation-mobile")
       this.object.menu = document.querySelector("#mobile-menu")
       this.eventType = window.ontouchstart ? 'touchstart':'click';
+      this.object.inPageLinkElements = document.querySelectorAll('a[href^="#"]');
+      this.object.mobileMenuItems = document.querySelectorAll(".mobile-menu-item");
+      this.mobileMenuItemsArray= [...this.object.mobileMenuItems];
       this. _addEventListeners();
   }
   _toggle(){
@@ -25,14 +28,11 @@ class SwitchNavigation{
       this.object.button.addEventListener(this.eventType,()=>{this._toggleInactiveStyle()})
   }
 }
+
 // インスタンス化
-const switchNavigationObject = new SwitchNavigation(); 
-const inPageLinkElements = document.querySelectorAll('a[href^="#"]');
-inPageLinkElements.forEach(inPageLinkElement => {
-    inPageLinkElement.addEventListener("click",event => {
-      SmoothScroll(event)
-    });
-    inPageLinkElement.addEventListener("touch",event => {
+const switchNavigation = new SwitchNavigation(); 
+switchNavigation.object.inPageLinkElements.forEach(inPageLinkElement => {
+      inPageLinkElement.addEventListener(switchNavigation.eventType,event => {
       SmoothScroll(event)
     });
 });
@@ -48,10 +48,9 @@ function SmoothScroll(event){
   $("html, body").animate({scrollTop:destinationCoordinates}, speed, "swing");
 }
 
-const mobileMenuList = document.querySelector("#mobile-menu-list").children;
-Array.prototype.forEach.call(mobileMenuList, function(mobileMenuItem) {
-  mobileMenuItem.firstElementChild.addEventListener(switchNavigationObject.eventType,() => {
-  switchNavigationObject._toggle();
-  switchNavigationObject._toggleInactiveStyle();
+switchNavigation.mobileMenuItemsArray.forEach(inPageLinkElement => {
+  inPageLinkElement.addEventListener(switchNavigation.eventType,() => {
+  switchNavigation._toggle();
+  switchNavigation._toggleInactiveStyle();
   });
 })

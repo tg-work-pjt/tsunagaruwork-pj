@@ -8,6 +8,7 @@
     position: fixed;
     top: 0;
     right: 0px;
+    z-index: 50;
 }
 .header-logo{
     height: 4.0rem;
@@ -99,11 +100,11 @@
 .mobile-menu_active{
     position: fixed;
     left: 0;
-    animation: menu_active 0.5s linear 0s;
+    animation: menu_active 0.2s linear 0s;
     animation-fill-mode: forwards;
 }
 .mobile-menu_inactive{
-    animation: menu_inactive 1s linear 0s;
+    animation: menu_inactive 0.4s linear 0s;
     animation-fill-mode: forwards;
     left: 0;
     /* opacityはアニメーションで0に上書きされる */
@@ -229,3 +230,12 @@
         margin-right: calc(100vw * 0.01%);
     }
 }
+@media screen and (max-height: 600px) {
+    /* 高さ700px以下の場合 */
+    .mobile-menu{
+        padding-top: 4rem;
+    }
+    .mobile-menu-list {
+        margin-bottom: 4.5rem;
+    }
+ }
