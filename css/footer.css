@@ -45,13 +45,10 @@ footer{
   color:#222;
   font-size: 1.2rem;
   line-height: 1;
+  margin-bottom: 0;
 }
 @media screen and (min-width:768px) {
   /*PC版のスタイルはここに記載する*/
-  #container{
-    margin-left: 140px;
-    margin-right: 140px;
-  }
   .footer__studio-logo{
     width: 184px;
     height: auto;
@@ -71,14 +68,10 @@ footer{
   .footer__twitter{
     margin-bottom: 26px;
   }
-  .footer__twitter_icon{
-    opacity:1;
-  }
   .footer__twitter_icon:hover{
     opacity:0.7;
   }
   .footer__copyright{
-    margin-bottom: 0;
     padding-bottom: 36px;
   }
 }
