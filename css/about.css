@@ -9,7 +9,9 @@
     position: relative;
 }
 .about_section-pcbg-top,
-.about_section-pcbg-bottom {
+.about_section-pcbg-bottom,
+.about_br_pconly,
+.about_section-pcbg {
     display: none;
 }
 .about_section-spbg-top {
@@ -34,20 +36,7 @@
     z-index: 100;
 }
 .about_br_sponly {
-    display: block;
-}
-.about_br_pconly {
-    display: none;
-}
-.about_section-pcbg {
-    display: none;
-}
-.about_section-spbg {
-    display: block;
-    position: absolute;
-    top: -8.4%;
-    left: 0;
-    width: 100%;
+    display: inline;
 }
 
 .about__topBox {
@@ -56,13 +45,13 @@
 }
 .about__header-title {
     line-height: 1.15;
-}
-.about__header-title_small {
     font-size: 1.2rem;
     display: block;
     font-weight: bold;
-    letter-spacing: 0.7px;
+    letter-spacing: 0.5px;
+    margin: 0;
 }
+
 .about__header-title_big {
     font-size: 6.0rem;
     display: block;
@@ -70,13 +59,12 @@
     color: #fff;
     -webkit-text-stroke: 1px #EA5504;
     font-family: "Montserrat";
-    letter-spacing: 3px;
 }
 .about__header-subtitle {
     font-size: 1.8rem;
     font-weight: bold;
-    letter-spacing: 0.8px;
-    margin-top: 26px;
+    letter-spacing: 0.5px;
+    margin-top: 34px;
     line-height: 1.7;
 }
 .about__header-description {
@@ -86,12 +74,6 @@
     line-height: 1.9;
     letter-spacing: 0.5px;
 }
-.about__topBox-list {
-    flex: 0 0 100%
-}
-.about__contact {
-   flex: 0 0 100%
-}
 .about__contact-link {
     display: block;
     background: url(../img/parts/contact_bg_sp.png) 50% 50% no-repeat;
@@ -99,7 +81,7 @@
     width: 100%;
     position: relative;
     margin-top: 8px;
-    padding: 19px 19px;
+    padding: 20px 0 32px 20px;
 }
 .about__contact-link:before {
     content: "";
@@ -115,11 +97,9 @@
 .about__contact-link-text {
    display: block;
    width: 88%;
-   box-sizing: border-box;
 }
 .about__contact-link_bold {
-    display: block;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 2.0rem;
     color: #000;
     font-family: "Montserrat";
@@ -129,21 +109,19 @@
     font-weight: normal;
     font-size: 1.2rem;
     color: #767676;
-    letter-spacing: 1.5px;
+    letter-spacing: 0.5px;
 }
 .about__contact-link-description {
-    display: block;
     color: #222222;
     margin-top: 8px;
+    margin-bottom: 0;
     font-size: 1.3rem;
-    letter-spacing: 0.7px;
-    line-height: 1.75;
+    letter-spacing: 0.5px;
+    line-height: 1.7;
 }
 
 .about__contents {
-    position: relative;
-    z-index: 100;
-    margin-top: 59px;
+    margin-top: 58px;
 }
 .about__contents-title {
     text-align: center;
@@ -191,6 +169,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 0 10px;
+    margin-bottom: 0;
 }
 .about__contents-list-item {
     flex: 0 0 100%;
@@ -201,7 +180,6 @@
     border-radius: 10px;
     margin: 0 0 17px ;
     padding: 14px 18px;
-    box-sizing: border-box;
 }
 .about__contents-list-item:last-child {
     margin-bottom: 0;
@@ -222,32 +200,26 @@
 }
 .about__contents-textbox-dt {
     font-weight: normal;
-    font-size: 1.4rem;
 }
 .about__contents-textbox-dd {
     margin: 0;
     font-weight: bold;
-    font-size: 1.4rem;
 }
 
 
 @media screen and (min-width:768px){
-.about_br_sponly {
-    display: none;
-}
 .about_br_pconly {
-    display: block;
+    display: inline;
 }
 
 .about {
-    margin: 0 calc(50% - 50vw);
-    font-size: 1.4rem;
-    font-family: "Noto Sans Japanese";
     background-size: 100%;
 }
 
 .about_section-spbg-top,
-.about_section-spbg-bottom {
+.about_section-spbg-bottom,
+.about_section-spbg,
+.about_br_sponly {
     display: none;
 }
 
@@ -270,14 +242,6 @@
     bottom: 0;
     left: 0;
     transform: translateY(100%)
-}
-
-.about_section-spbg {
-    display: none;
-}
-.about__header {
-    position: relative;
-    z-index: 100;
 }
 .about__topBox {
     align-items: flex-start;
@@ -312,22 +276,10 @@
    flex: 0 0 43%
 }
 .about__contact-link {
-    display: block;
     background: url(../img/parts/contact_bg.png) 50% 50% no-repeat;
     background-size: 100% 100%;
     margin-top: 31px;
     padding: 28px 32px;
-}
-.about__contact-link:before {
-    content: "";
-    width: 3%;
-    padding-top: 2.5%;
-    position: absolute;
-    top: 50%;
-    right: 6%;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    transform: rotate(45deg) translateY(-50%);
 }
 .about__contact-link-text {
    width: 85%;
@@ -355,8 +307,6 @@
 }
 .about__contents-title_color:before,
 .about__contents-title_color:after {
-    height: 2px;
-    background: #EA5504;
     flex: 0 0 7px;
 }
 .about__contents-title_color:before {
