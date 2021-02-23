@@ -5,8 +5,8 @@ class SwitchNavigation{
       this.object.menu = document.querySelector("#mobile-menu")
       this.eventType = window.ontouchstart ? 'touchstart':'click';
       this.object.inPageLinkElements = document.querySelectorAll('a[href^="#"]');
-      this.object.mobileMenuItems = document.querySelectorAll(".mobile-menu-item");
-      this.mobileMenuItemsArray= [...this.object.mobileMenuItems];
+      this.mobileMenuItems = document.querySelectorAll(".mobile-menu-item");
+      this.mobileMenuItemsArray= [...this.mobileMenuItems];
       this. _addEventListeners();
   }
   _toggle(){
