@@ -2,6 +2,12 @@
 .firstcontent__br-pc{
     display: none;
 }
+.firstcontent__br-sp{
+    display: none;
+}
+.firstcontent__br-sp2{
+    display: block;
+}
 .firstcontent{
     position:relative;
 }
@@ -45,7 +51,14 @@
 .firstcontent__img_pc{
     display: none;
 }
-
+@media screen and (min-width:321px){
+    .firstcontent__br-sp2{
+        display: none;
+    }
+    .firstcontent__br-sp{
+        display: block;
+    }
+}
 @media screen and (min-width:768px) {
   /*PC版のスタイルはここに記載する*/
 .firstcontent__br-sp{
