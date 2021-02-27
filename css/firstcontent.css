@@ -1,8 +1,5 @@
 @charset "UTF-8";
-.firstcontent__br-pc{
-    display: none;
-}
-.firstcontent__br-sp{
+.firstcontent__br-pc,.firstcontent__br-pc2,.firstcontent__br-sp,.firstcontent__img_pc{
     display: none;
 }
 .firstcontent__br-sp2{
@@ -48,9 +45,6 @@
     width: 100%;
     margin-bottom: 60px;
 }
-.firstcontent__img_pc{
-    display: none;
-}
 @media screen and (min-width:321px){
     .firstcontent__br-sp2{
         display: none;
@@ -61,10 +55,10 @@
 }
 @media screen and (min-width:768px) {
   /*PC版のスタイルはここに記載する*/
-.firstcontent__br-sp{
-      display: none;
+.firstcontent__br-sp,.firstcontent__img_sp{
+    display: none;
 }
-.firstcontent__br-pc{
+.firstcontent__br-pc,.firstcontent__br-pc2{
       display: block;
 }
 .firstcontent__bg{
@@ -91,18 +85,20 @@
     letter-spacing: 0.02rem;
     line-height: 3rem;
 }
-.firstcontent__img_sp{
-    display: none;
-}
-.firstcontent__contents{
-    text-align: center;
-}
 .firstcontent__img_pc{
     display: block;
-    width: 782px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-right: 30px;
+}
+@media screen and (min-width:1024px) {
+.firstcontent__br-pc2{
+    display: none;
+}
+.firstcontent__img_pc{
+    width: 70%;
     height: 420px;
     object-fit: cover;
-    margin: auto;
-    padding-right: 36px;
 }
 }
