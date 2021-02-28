@@ -2,7 +2,7 @@
     margin: 0 calc(50% - 50vw);
     font-size: 1.4rem;
     font-family: "Noto Sans Japanese";
-    background-image: linear-gradient(rgba(234,85,4,0.1) ,rgba(234,85,4,0.1));
+    background-image: url(../img/parts/background/tw_gunya_sp/gunya_006_01.png);
     background-repeat: no-repeat;
     background-size: 100% calc(100% - 35px);
     background-position: 0 100%;
@@ -38,11 +38,6 @@
 .about_br_sponly {
     display: inline;
 }
-
-.about__topBox {
-    display: flex;
-    flex-wrap: wrap;
-}
 .about__header-title {
     line-height: 1.15;
     font-size: 1.2rem;
@@ -70,13 +65,12 @@
 .about__header-description {
     margin-top: 25px;
     padding-left: 2.2px;
-    font-size: 1.4rem;
     line-height: 1.9;
     letter-spacing: 0.5px;
 }
 .about__contact-link {
     display: block;
-    background: url(../img/parts/contact_bg_sp.png) 50% 50% no-repeat;
+    background: url(../img/parts/contact_bg_sp.png)  no-repeat;
     background-size: 100% 100%;
     width: 100%;
     position: relative;
@@ -95,7 +89,6 @@
     transform: rotate(45deg) translateY(-50%);
 }
 .about__contact-link-text {
-   display: block;
    width: 88%;
 }
 .about__contact-link_bold {
@@ -105,7 +98,6 @@
     font-family: "Montserrat";
 }
 .about__contact-link_small {
-    display: block;
     font-weight: normal;
     font-size: 1.2rem;
     color: #767676;
@@ -172,7 +164,6 @@
     margin-bottom: 0;
 }
 .about__contents-list-item {
-    flex: 0 0 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -184,15 +175,11 @@
 .about__contents-list-item:last-child {
     margin-bottom: 0;
 }
-.about__contents-list-item:hover {
-    opacity: 0.6;
-}
 .about__contents-imgbox {
     flex: 0 0 22%;
 }
 .about__contents-img {
     max-width: 100%;
-    height: auto;
 }
 .about__contents-textbox {
     flex: 0 0 72%
@@ -247,7 +234,7 @@
     transform: translateY(100%)
 }
 .about__topBox {
-    align-items: flex-start;
+    display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
@@ -300,7 +287,6 @@
 }
 
 .about__contents {
-    position: relative;
     z-index: 100;
     margin-top: 87px;
 }
@@ -358,15 +344,14 @@
 .about__contents-imgbox {
     flex: 0 0 29%;
 }
-.about__contents-img {
-    max-width: 100%;
-    height: auto;
-}
 .about__contents-textbox {
     flex: 0 0 65%
 }
 .about__contents-textbox-dl {
     margin-top: 5px;
+}
+.about__contents-list-item:hover {
+    opacity: 0.6;
 }
 
 }
