@@ -203,6 +203,7 @@
 }
 
 .about {
+    background-image: linear-gradient(rgba(234,85,4,0.1) 0%,rgba(234,85,4,0.1) 100% );
     background-size: 100%;
 }
 
