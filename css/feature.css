@@ -63,9 +63,6 @@
     margin-top: 27px;
     letter-spacing: -0.1px;
 }
-.feature-contents {
-    position: relative;
-}
 .feature-contents__list {
     margin-top: 115px
 }
@@ -207,10 +204,11 @@
 }
 
 @media screen and (max-width:900px) {
-    .feature-contents__description {
-        transform-origin: top center;
-        transform: scale(0.8);
-    }
+.feature-contents__description {
+    transform-origin: top center;
+    transform: scale(0.7);
+}
+
 } 
 
 }
