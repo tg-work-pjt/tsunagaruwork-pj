@@ -88,9 +88,9 @@
 .firstcontent__img_pc{
     display: block;
     width: 100%;
-    height: auto;
-    margin: auto;
+    margin: 0 auto;
     padding-right: 30px;
+}
 }
 @media screen and (min-width:1024px) {
 .firstcontent__br-pc2{
