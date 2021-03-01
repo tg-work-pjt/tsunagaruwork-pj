@@ -224,7 +224,7 @@
       /* タブレット用に微調整 */
     .header{
         height: 8.0rem;
-        padding: 1.8rem 6% 2.2rem 6%;
+        padding: 1.8rem 4% 2.2rem 4%;
     }
     .header-navigation__list li{
         margin-right: calc(100vw * 0.01%);
