@@ -1,0 +1,104 @@
+@charset "UTF-8";
+.firstcontent__br-pc,.firstcontent__br-pc2,.firstcontent__br-sp,.firstcontent__img_pc{
+    display: none;
+}
+.firstcontent__br-sp2{
+    display: block;
+}
+.firstcontent{
+    position:relative;
+}
+.firstcontent__bg{
+    background-image: url(../img/parts/background/tw_gunya_sp/gunya_001.png);
+    position: absolute;
+    padding-bottom: calc((100% + 40px)*554/366);
+    background-size: 70% auto;
+    background-repeat: no-repeat;
+    z-index: -10;
+    left: -2.0rem;
+    width: calc(100% + 40px);
+    top: 0;
+}
+.firstcontent__sentence{
+    padding-top: 87px;
+    text-align: center;
+    margin: 0 10px 1.4rem;
+}
+.firstcontent__heading{
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    margin-bottom: 29px;
+}
+.firstcontent__color{
+    color: #ea5504;
+}
+.firstcontent__text{
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+}
+.firstcontent__img_sp{
+    display: block;
+    width: 100%;
+    margin-bottom: 60px;
+}
+@media screen and (min-width:321px){
+    .firstcontent__br-sp2{
+        display: none;
+    }
+    .firstcontent__br-sp{
+        display: block;
+    }
+}
+@media screen and (min-width:768px) {
+  /*PC版のスタイルはここに記載する*/
+.firstcontent__br-sp,.firstcontent__img_sp{
+    display: none;
+}
+.firstcontent__br-pc,.firstcontent__br-pc2{
+      display: block;
+}
+.firstcontent__bg{
+    background-image: url(../img/parts/background/bk_gunya_pc/gunyaPC@2x.png);
+    position: absolute;
+    padding-bottom: calc((100% + 280px)*1534/1296);
+    background-size: 40% auto;
+    background-repeat: no-repeat;
+    z-index: -10;
+    left: -140px;
+    width: calc(100% + 280px);
+    top: 0;
+}
+.firstcontent__sentence{
+    padding-top: 95px;
+}
+.firstcontent__heading{
+    font-size: 2.0rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 36px;
+}
+.firstcontent__text{
+    font-size: 1.6rem;
+    letter-spacing: 0.02rem;
+    line-height: 3rem;
+}
+.firstcontent__img_pc{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 30px;
+}
+}
+@media screen and (min-width:1024px) {
+.firstcontent__br-pc2{
+    display: none;
+}
+.firstcontent__img_pc{
+    width: 70%;
+    height: 420px;
+    object-fit: cover;
+}
+}
