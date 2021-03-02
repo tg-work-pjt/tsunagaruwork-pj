@@ -4,72 +4,567 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>つながるわーく|デジハリ＆デジLIG生のポートフォリオ・作品集</title>
+    <meta name=”description”
+        content=”つながる「わ」で広がるクリエイティブ。私たち「つながるわーく」は、UI/UXデザイン、コーディング、イラスト、ロゴ制作、動画編集など、それぞれの強みを持ったクリエイティブ集団です。あなたのアイデアをカタチにちょっと欲しいがここにあります。”>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/destyle.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/about.css">
+
+
+    <!-- 自身のお名前のコメントのFrom〜End間に作成したCSSを読み込んでください -->
+    <!-- From mogu -->
+    <link rel="stylesheet" href="./css/member.css">
+    <link rel="stylesheet" href="css/navigation.css">
+
+    <!-- End mogu -->
+    <!-- From kitamu -->
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/PageTop.css">
+    <!-- End kitamu -->
+    <!-- From sasakisan -->
+    <link rel="stylesheet" href="css/firstcontent.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- End sasakisan -->
+    <!-- From tomysan -->
+  <link rel="stylesheet" href="css/feature.css">
+  <link rel="stylesheet" href="css/about.css">
+   <link rel="icon" href="img/logo/logo_symbol_or_A.png" />
+    <!-- End tomysan -->
+>>>>>>> origin/develop
 </head>
 
 <body>
     <div id="global-container">
-        <div id="container">
-            <!-- //From mogusan -->
-            <div class="mobile-menu__cover"></div>
-            <div class="navigation-trigger"></div>
-            <header class=header>
-                <div class="logo"></div>
-                <nav class="header-navigation"></nav>
-                <button>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+        <!-- //From mogusan -->
+        <div class="mobile-menu__cover"></div>
+        <div class="navigation-trigger"></div>
+        <header class="header" id="header">
+            <h2 class="header-logo"><img class="header-logo-img" src="img/logo/logo_text_or.png" alt="つながるわーくのロゴ"></h2>
+            <div class="header-navigation-mobile" id="header-navigation-mobile">
+                <button class="header-navigation-mobile__button">
+                    <span id="header-navigation-mobile__button-top" class="header-navigation-mobile__button-top"></span>
+                    <span id="header-navigation-mobile__button-middle" class="header-navigation-mobile__button-middle"></span>
+                    <span id="header-navigation-mobile__button-bottom" class="header-navigation-mobile__button-bottom"></span>
                 </button>
-            </header>
+            </div>
+            <nav class="header-navigation">
+                <ul class="header-navigation__list">
+                    <li>
+                        <a class="header-navigation-item" href="#feature">
+                            <div class="header-navigation-item__title">feature</div>
+                            <div class="header-navigation-item__subtitle">特徴</div>
+                            <div class="header-navigation-item__line"></div>        
+                        </a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a  class="header-navigation-item" href="#member">
+                            <div class="header-navigation-item__title">members</div>
+                            <div class="header-navigation-item__subtitle">メンバー</div>
+                            <div class="header-navigation-item__line"></div>
+                        </a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a  class="header-navigation-item" href="#about">
+                            <div class="header-navigation-item__title">about</div>
+                            <div class="header-navigation-item__subtitle">私たちについて</div>
+                            <div class="header-navigation-item__line"></div>
+                        </a>
+                    </li>
+                    <li class="header-navigation-item">
+                        <a  class="header-navigation-item" href="https://forms.gle/9knF7SF4YyLyJJwv9">
+                            <div class="header-navigation-item__title">contact</div>
+                            <div class="header-navigation-item__subtitle">ご依頼・お問い合わせ</div>
+                            <div class="header-navigation-item__line"></div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="container">
             <!-- //End mogusan -->
 
             <!-- //From kitamu -->
             <div id="contents">
                 <div class="keyvisual">
-                    <button class="pagetop"></button>
+                    <video src="img/video/PC-KV.mp4" type= "video/mp4" class="video-PC" autoplay muted playsinline volume="0"></video>
+                    <video src="img/video/SP-KV.mp4" type= "video/mp4" class="video-SP" autoplay muted playsinline volume="0"></video>
                 </div>
+          <p class="pagetop"><a href = #><img src="img/topbutton/topbutton_arrow.png" alt="chaverin"class ="chaverin"></a></p>
                 <!-- //End kitamu -->
 
                 <div id="main-contents">
                     <main>
-                        <section class = 'firstcontent'>
+                        <section class='firstcontent'>
                             <!-- //From sasakisan -->
                             <div class="firstcontent__sentence">
-                                <!-- ここには文章が入ります -->
+                                <h2 class="firstcontent__heading">"つながる<span class="firstcontent__color">輪</span>で広がる<br class="firstcontent__br-sp2">クリエイティブ"</h2>
+                                <p class="firstcontent__text">はじめまして！<br class="firstcontent__br-sp2">私たち「つながるわーく」は、<br>
+                                UI/UXデザイン、コーディング、<br class="firstcontent__br-sp2 firstcontent__br-pc2">イラスト、<br class="firstcontent__br-sp">
+                                ロゴ制作、<br class="firstcontent__br-sp2">動画編集など、<br class="firstcontent__br-pc">それぞれの<br class="firstcontent__br-sp firstcontent__br-sp2">
+                                強みを持った<br class="firstcontent__br-sp2">クリエイティブ集団です。</p>
                             </div>
-                            <div class="section__contents">
-                                <!-- ここには画像が入ります -->
+                            <div class="firstcontent__contents">
+                                <img class="firstcontent__img_sp" src="img/parts/top_tsunagaru_figure_sp_white.png" alt="つながるわーくの図">
+                                <img class="firstcontent__img_pc" src="img/parts/top_tsunagaru_figure_pc_gunya_white.png" alt="つながるわーくの図PC版">
                             </div>
+                            <div class="firstcontent__bg"></div>
                             <!-- // End sasakisan -->
                         </section>
-                        <section class = feature>
-                            <!-- //From tomysan -->
-                            <div class="feature__header">
-                                <!-- ここは特徴からお仕事を承っておりますの部分 -->
+
+                        <section class ="feature">                      
+      <!-- //From tomysan -->
+                            <img src="./img/parts/background/tw_gunya_sp/gunya_002.png" class="feature__spbg-top">
+                            <div class="feature-inner">
+                                <div class="feature-header">
+                                    <!-- ここは特徴からお仕事を承っておりますの部分 -->
+                                    <h2 class="feature-header__title"><span class="feature-header__title--size-small">特徴</span><em class="feature-header__title--size-big">FEATURE</em></h2>
+                                        <p class="feature-header__subtitle">あなたのアイデアをカタチに<br class="feature-header__subtitle--spOnly"><span class="feature-header__subtitle--color">"ちょっと欲しい"</span> がここにある</p>
+                                        <p class="feature-header__description">つながるわーくはWeb制作をはじめ、バナー・イラスト・動画など＋@のスキルがあるクリエイター集団です。<br class="feature-header__description--pcOnly">わたしたちは３つの強みを活かし、個人でのお仕事を承っております。</p>
+                                </div>
+                                <div class="feature-contents">
+                                    <!-- ここに3つの特徴からお問い合わせ下さいまで -->
+                                    <ul class="feature-contents__list">
+                                        <li class="feature-contents__item">
+                                            <dl class="feature-contents__text">
+                                                <dt class="feature-contents__title">スキル</dt>
+                                                <dd class="feature-contents__description">それぞれに強みをもったメンバーが揃っているので、クリエイティブ領域が広く、希望クリエイターとのマッチングも簡単です。</dd>
+                                            </dl>
+                                            <img src="./img/parts/feature_bg_01.png" alt="" class="feature-contents__img">
+                                        </li>
+                                        <li class="feature-contents__item">
+                                            <dl class="feature-contents__text feature-contents__text--second">
+                                                <dt class="feature-contents__title">柔軟な業務対応</dt>
+                                                <dd class="feature-contents__description">単発から長期までご希望の案件契約が可能。稼働時間も柔軟に対応できるので、納期もお気軽にご相談ください。</dd>
+                                            </dl>
+                                            <img src="./img/parts/feature_bg_02.png" alt="" class="feature-contents__img">
+                                        </li>
+                                        <li class="feature-contents__item">
+                                            <dl class="feature-contents__text feature-contents__text--third">
+                                                <dt class="feature-contents__title">安心プライス</dt>
+                                                <dd class="feature-contents__description">バナー制作からテロップ差し込みなど、細かいお仕事から受注可能。ご依頼内容に合った価格設定なので安心してご利用いただけます。</dd>
+                                            </dl>
+                                            <img src="./img/parts/feature_bg_03.png" alt="" class="feature-contents__img">
+                                        </li>
+                                    </ul>
+                                    <div class="feature-contents__contact">
+                                        <p class="feature-contents__contact-text">個人へのお問い合わせは<a href="#" class="feature-contents__link">Members</a>から個々へ、<br>チーム代表へのお問い合わせは<a href="#" class="feature-contents__link">Contact</a>（Googleフォーム）からお問い合わせください。</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="feature__contents">
-                                <!-- ここに3つの特徴からお問い合わせ下さいまで -->
-                            </div>
+                            <img src="./img/parts/background/bk_gunya_pc/gunya_002.png" alt="" class="feature__pcbg">
+                            <img src="./img/parts/background/tw_gunya_sp/gunya_002.png" alt="" class="feature__spbg-bottom">
                             <!-- //End tomysan -->
                         </section>
-                        <section class= 'member'>
+                        <section class="member" id="member">
                             <!-- From mogusan -->
                             <div class="member__header">
                                 <!-- メンバーからパートナーまでの部分 -->
+                                <div class="member__title-wrapper">
+                                    <div class="member__subtitle">メンバー</div>
+                                    <h2 class="member__title">members</h2>                                    
+                                </div>
+                                <p class="member-explanation">様々な"得意"を持ち合わせた<br class="member__sp">クリエイティブ集団<br>だからこそマッチングする<br class="member__sp"><span class="member-explanation__partner">希望のパートナー</span></p>
                             </div>
                             <div class="member__contents">
                                 <!-- メンバーの紹介page -->
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title member-uppercase">portfolio</div>
+                                        <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name member-capitalize">hiroko&nbsp;ohwada</div>
+                                    </div>
+                                    <a class="member-individual__work" href="https://hiroko-ohwada.studio.site/">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/01_hiromyon_work.jpg" alt="ひろみょんさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/01_hiromyon_work.jpg" alt="ひろみょんさんの作品イメージ">
+                                        </div>
+                                        <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/01_Hiromyon.png" alt="ひろみょんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author">ひろみょん</div>
+                                        <div class="member-individual__sns">
+                                            <a class="member-individual__sns-twitter" href="https://twitter.com/hiromyooooon"><img src="./img/snsicon/twitter_members.png" alt="Twitterのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item">Webデザイン</li>
+                                        <li class="member-individual__skill-item">コーディング</li>
+                                        <li class="member-individual__skill-item">Web解析</li>
+                                        <li class="member-individual__skill-item">グラフィックデザイン</li>
+                                    </ul>
+                                </div>
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title member-uppercase">portfolio</div>
+                                        <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name member-individual__name-hiragana">おおやま&nbsp;まあや</div>
+                                    </div>
+                                    <a class="member-individual__work" href="https://www.maaya-design.com/">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/02_ooyamamaaya_work.jpg" alt="おおやままあやさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/02_ooyamamaaya_work.jpg" alt="おおやままあやさんの作品イメージ">
+                                        </div>
+                                            <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/02_Maaya.png" alt="おおやままあやさんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author">おおやままあや</div>
+                                        <div class="member-individual__sns">
+                                            <a class="member-individual__sns-twitter" href="https://twitter.com/uzuranotamago10"><img src="./img/snsicon/twitter_members.png" alt="Twitterのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item">Webデザイン</li>
+                                        <li class="member-individual__skill-item">コーディング</li>
+                                        <li class="member-individual__skill-item">イラスト</li>
+                                        <li class="member-individual__skill-item">グラフィックデザイン</li>
+                                        <li class="member-individual__skill-item">WordPress</li>
+                                    </ul>
+                                </div>
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title member-uppercase">coming&nbsp;soon</div>
+                                        <!-- <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name"></div> -->
+                                    </div>
+                                    <!-- to:doリンク追加する -->
+                                    <a class="member-individual__work" href="">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/99_coming_soon.jpg" alt="KentoKitamuraさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/99_coming_soon.jpg" alt="KentoKitamuraさんの作品イメージ">
+                                        </div>
+                                            <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/03_Kento.png" alt="KentoKitamuraさんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author member-capitalize">kento&nbsp;kitamura</div>
+                                        <div class="member-individual__sns">
+                                            <a href="https://www.facebook.com/profile.php?id=100006262749058" class="member-individual__sns-facebook" ><img src="./img/snsicon/facebook.png" alt="Facebookのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item">Webデザイン</li>
+                                        <li class="member-individual__skill-item">コーディング</li>
+                                        <li class="member-individual__skill-item">WordPress</li>
+                                    </ul>
+                                </div>
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title member-uppercase">portfolio</div>
+                                        <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name member-uppercase">miki&nbsp;hanyu</div>
+                                    </div>
+                                    <a class="member-individual__work" href="https://mikihanyu.com">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/04_hanyumiki_work.jpg" alt="ハニュウミキさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/04_hanyumiki_work.jpg" alt="ハニュウミキさんの作品イメージ">
+                                        </div>
+                                            <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/04_Miki.png" alt="ハニュウミキさんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author">ハニュウミキ</div>
+                                        <div class="member-individual__sns">
+                                            <a class="member-individual__sns-instagram" href="https://www.instagram.com/hanyu.miki/?hl=ja"><img src="./img/snsicon/instagram.png" alt="Instagramのアイコン"></a>
+                                            <a class="member-individual__sns-twitter" href="https://twitter.com/mikiswolf"><img src="./img/snsicon/twitter_members.png" alt="Twitterのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item">Webデザイン</li>
+                                        <li class="member-individual__skill-item">コーディング</li>
+                                        <li class="member-individual__skill-item">イラスト</li>
+                                        <li class="member-individual__skill-item">グラフィックデザイン</li>
+                                    </ul>
+                                </div>
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title member-capitalize">portfolio</div>
+                                        <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name">Ikue&nbsp;Hirayama</div>
+                                    </div>
+                                    <a class="member-individual__work" href="https://hirama-portfolio.studio.site">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/05_hirama_work.jpg" alt="ひらまさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/05_hirama_work.jpg" alt="ひらまさんの作品イメージ">
+                                        </div>
+                                            <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/05_Hirama.png" alt="ひらまさんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author">ひらま</div>
+                                        <div class="member-individual__sns">
+                                            <a class="member-individual__sns-twitter" href="https://twitter.com/ihrm_w"><img src="./img/snsicon/twitter_members.png" alt="Twitterのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item">Webデザイン</li>
+                                        <li class="member-individual__skill-item">グラフィックデザイン</li>
+                                        <li class="member-individual__skill-item">イラスト</li>
+                                    </ul>
+                                </div>
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title member-capitalize">works</div>
+                                        <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name member-capitalize"><span class="member-uppercase">okimoto</span>&nbsp;natsuko</div>
+                                    </div>
+                                    <a class="member-individual__work" href="http://ntskokmt.jp">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/06_kokonatsu_work.jpg" alt="ここなつさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/06_kokonatsu_work.jpg" alt="ここなつさんの作品イメージ">
+                                        </div>
+                                            <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/06_Kokonatsu.png" alt="ここなつさんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author">ここなつ</div>
+                                        <div class="member-individual__sns">
+                                            <a class="member-individual__sns-twitter" href="https://twitter.com/ccnts91"><img src="./img/snsicon/twitter_members.png" alt="Twitterのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item">Webデザイン</li>
+                                        <li class="member-individual__skill-item">グラフィックデザイン</li>
+                                    </ul>
+                                </div>
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title member-uppercase">portfolio</div>
+                                        <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name member-uppercase">endo&nbsp;noriko</div>
+                                    </div>
+                                    <a class="member-individual__work" href="https://endo-noriko.studio.site/">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/07_monmon_work.jpg" alt="モンモンさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/07_monmon_work.jpg" alt="モンモンさんの作品イメージ">
+                                        </div>
+                                            <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/07_Monmon.png" alt="モンモンさんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author">モンモン</div>
+                                        <div class="member-individual__sns">
+                                            <a class="member-individual__sns-twitter" href="https://twitter.com/en_design67"><img src="./img/snsicon/twitter_members.png" alt="Twitterのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item">Webデザイン</li>
+                                        <li class="member-individual__skill-item">コーディング</li>
+                                        <li class="member-individual__skill-item">グラフィックデザイン</li>
+                                    </ul>
+                                </div>
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title member-uppercase">coming&nbsp;soon</div>
+                                        <!-- <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name"></div> -->
+                                    </div>
+                                    <a class="member-individual__work" href="">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/99_coming_soon.jpg" alt="ゆいさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/99_coming_soon.jpg" alt="ゆいさんの作品イメージ">
+                                        </div>
+                                            <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/08_Yui.png" alt="ゆいさんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author">ゆい</div>
+                                        <div class="member-individual__sns">
+                                            <a class="member-individual__sns-twitter" href="https://twitter.com/sty186"><img src="./img/snsicon/twitter_members.png" alt="Twitterのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item">Webデザイン</li>
+                                        <li class="member-individual__skill-item">コーディング</li>
+                                        <li class="member-individual__skill-item">イラスト</li>
+                                        <li class="member-individual__skill-item">グラフィックデザイン</li>
+                                    </ul>
+                                </div>
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title member-uppercase">coming&nbsp;soon</div>
+                                        <!-- <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name"></div> -->
+                                    </div>
+                                    <a class="member-individual__work" href="">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/99_coming_soon.jpg" alt="レイわんさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/99_coming_soon.jpg" alt="レイわんさんの作品イメージ">
+                                        </div>
+                                        <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/09_Daichi.png" alt="レイわんさんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author">レイわん</div>
+                                        <div class="member-individual__sns">
+                                            <a class="member-individual__sns-twitter" href="https://twitter.com/0to111"><img src="./img/snsicon/twitter_members.png" alt="Twitterのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item member-individual__skill-item-movie">動画</li>
+                                    </ul>
+                                </div>
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title member-uppercase">coming&nbsp;soon</div>
+                                        <!-- <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name"></div> -->
+                                    </div>
+                                    <a class="member-individual__work" href="">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/99_coming_soon.jpg" alt="もぐさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/99_coming_soon.jpg" alt="もぐさんの作品イメージ">
+                                        </div>
+                                            <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/10_mogu.png" alt="もぐさんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author">もぐ</div>
+                                        <div class="member-individual__sns">
+                                            <a class="member-individual__sns-twitter" href="https://twitter.com/mgmgmg123123"><img src="./img/snsicon/twitter_members.png" alt="Twitterのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item">Webデザイン</li>
+                                        <li class="member-individual__skill-item">コーディング</li>
+                                        <li class="member-individual__skill-item">イラスト</li>
+                                        <li class="member-individual__skill-item">グラフィックデザイン</li>
+                                        <li class="member-individual__skill-item">WordPress</li>
+                                    </ul>
+                                </div>
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title member-uppercase">coming&nbsp;soon</div>
+                                        <!-- <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name"></div> -->
+                                    </div>
+                                    <a class="member-individual__work" href="">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/99_coming_soon.jpg" alt="さきほんさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/99_coming_soon.jpg" alt="さきほんさんの作品イメージ">
+                                        </div>
+                                        <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/11_sakihon.png" alt="さきほんさんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author">さきほん</div>
+                                        <div class="member-individual__sns">
+                                            <a class="member-individual__sns-twitter" href="https://twitter.com/shakihon"><img src="./img/snsicon/twitter_members.png" alt="Twitterのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item">コーディング</li>
+                                        <li class="member-individual__skill-item">WordPress</li>
+                                    </ul>
+                                </div>
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title member-individual__name-hiragana">WordPressでつくるポートフォリオブログ</div>
+                                        <!-- <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name"></div> -->
+                                    </div>
+                                    <a class="member-individual__work" href="https://xs558468.xsrv.jp/">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/12_sasakiyoshiko_work.jpg" alt="ササキヨシコさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/12_sasakiyoshiko_work.jpg" alt="ササキヨシコさんの作品イメージ">
+                                        </div>
+                                        <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/12_Yoshiko.png" alt="ササキヨシコさんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author">ササキヨシコ</div>
+                                        <div class="member-individual__sns">
+                                            <a class="member-individual__sns-twitter" href="https://twitter.com/positonAbsolute"><img src="./img/snsicon/twitter_members.png" alt="Twitterのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item">Webデザイン</li>
+                                        <li class="member-individual__skill-item">コーディング</li>
+                                        <li class="member-individual__skill-item">WordPress</li>
+                                    </ul>
+                                </div>
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title">studio&#045;ty&nbsp;Portfolio</div>
+                                        <!-- <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name"></div> -->
+                                    </div>
+                                    <a class="member-individual__work" href="https://studio-ty.com">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/13_tomy_work.jpg" alt="ToMYさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/13_tomy_work.jpg" alt="ToMYさんの作品イメージ">
+                                        </div>
+                                        <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/13_ToMY.png" alt="ToMYさんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author">ToMY</div>
+                                        <div class="member-individual__sns">
+                                            <a class="member-individual__sns-twitter" href="https://twitter.com/ToMY_40Web"><img src="./img/snsicon/twitter_members.png" alt="Twitterのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item">Webデザイン</li>
+                                        <li class="member-individual__skill-item">コーディング</li>
+                                        <li class="member-individual__skill-item">WordPress</li>
+                                        <li class="member-individual__skill-item">グラフィックデザイン</li>
+                                        <li class="member-individual__skill-item member-individual__skill-item-movie">動画</li>
+                                    </ul>
+                                </div>
+                                <div class="member-individual">
+                                    <div class="member-individual__heading">
+                                        <div class="member-individual__title  member-individual__name-hiragana">ポートフォリオサイト</div>
+                                        <!-- <div>&nbsp;|&nbsp;</div>
+                                        <div class="member-individual__name"></div> -->
+                                    </div>
+                                    <a class="member-individual__work" href="http://yuki10portofolio.com">
+                                        <div class="member-individual__work-image-wrapper">
+                                            <img class="member-individual__work-image member__sp" src="./img/members/members_sp/14_riso_work.jpg" alt="リソさんの作品イメージ">
+                                            <img class="member-individual__work-image member__pc" src="./img/members/members_pc/14_riso_work.jpg" alt="リソさんの作品イメージ">
+                                        </div>
+                                        <div class="member-individual__vertical-frame"></div>
+                                        <div class="member-individual__horizontal-frame"></div>
+                                    </a>
+                                    <div class="member-individual__profile">
+                                        <div class="member-individual__caricature"><img src="./img/caricature_icon/14_Riso.png" alt="リソさんの似顔絵アイコン"></div>
+                                        <div class="member-individual__author">リソ</div>
+                                        <div class="member-individual__sns">
+                                            <a class="member-individual__sns-twitter" href="https://twitter.com/riso78828371"><img src="./img/snsicon/twitter_members.png" alt="Twitterのアイコン"></a>
+                                        </div>
+                                    </div>
+                                    <ul class="member-individual__skill-list">
+                                        <li class="member-individual__skill-item">Webデザイン</li>
+                                        <li class="member-individual__skill-item">グラフィックデザイン</li>
+                                    </ul>
+                                </div>
                             </div>
+                            <div class="member__sp-gunya1 member__sp"></div>
+                            <div class="member__sp-gunya2 member__sp"></div>
+                            <div class="member__pc-gunya1 member__pc"></div>
                             <!-- End mogusan -->
                         </section>
-                        <section class="about">
+
+                        <section class="about" id="about">
                             <!-- From tomysan -->
                             <img src="img/parts/background/bk_gunya_pc/gunya_005_top.png" alt="" class="about_section-pcbg-top">
                             <img src="img/parts/background/tw_gunya_sp/gunya_006_top.png" alt="" class="about_section-spbg-top">
@@ -269,33 +764,95 @@
                             <img src="img/parts/background/tw_gunya_sp/gunya_006_bottom.png" alt="" class="about_section-spbg-bottom">
                             <img src="img/parts/background/bk_gunya_pc/gunya_005_bottom.png" alt="" class="about_section-pcbg-bottom">
                         </section>
-                    </main>             
+                    </main>
                 </div>
             </div>
-            <footer class="footer">
-                <!-- From sasakisan -->
-                <div class="footer logo">
-                    <!-- デジハリロゴの部分 -->
-                </div>
-                <div class="footer__inner">
-                    <!-- つながるworkの部分 -->
-                </div>
-                <!-- End sasakisan -->
-            </footer>
         </div>
-        <div class="mobile-menu">
-            <!-- From mogusan -->
-            <div class="mobile-menuP__header">
-                <!-- ハンバーガーメニューの白い部分 -->
+        <footer class="footer">
+            <!-- From sasakisan -->
+            <div>
+                <p class="footer__thanks">Thanks !<br>We started from here</p>
+                <!-- デジハリロゴの部分 -->
+                <img class="footer__studio-logo" src="img/logo/STUDIO_logo_002.png" alt="デジハリロゴ">
             </div>
+            <div class="footer__inner">
+                <!-- つながるworkの部分 -->
+                <div>
+                    <img class="footer__logo_text" src="img/logo/logo_text_or.png" alt="つながるわーくロゴ">
+                </div>
+                <div class="footer__twitter">
+                    <a class= "footer__twitter_link" href="https://twitter.com/tsunagaruwork">
+                        <img class="footer__twitter-bg" src="img/parts/background/bk_gunya_pc/gunya_007_footer_twitter.png" alt="twitterグニャ">                                   
+                        <img class="footer__twitter_icon" src="img/snsicon/twitter_footer.png" alt="twitterアイコン">
+                    </a>
+                </div>
+
+                <p class="footer__copyright">&copy;2021 &nbsp;Tsunagaruwork</p>
+            </div>
+            <!-- End sasakisan -->
+        </footer>
+        <nav id ="mobile-menu" class="mobile-menu">
+
+            <!-- From mogusan -->
             <div class="mobile-menu__inner">
+                <ul class="mobile-menu-list" id="mobile-menu-list">
+                    <li class="mobile-menu-item">
+                        <a class="header-navigation-item" href="#feature">
+                            <div class="mobile-menu-title">feature</div>
+                            <div class="mobile-menu-subtitle">特徴</div>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a  class="header-navigation-item" href="#member">
+                            <div class="mobile-menu-title">members</div>
+                            <div class="mobile-menu-subtitle">メンバー</div>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a  class="header-navigation-item" href="#about">
+                            <div class="mobile-menu-title">about</div>
+                            <div class="mobile-menu-subtitle">私たちについて</div>
+                        </a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a  class="header-navigation-item" href="https://forms.gle/9knF7SF4YyLyJJwv9">
+                            <div class="mobile-menu-title">contact</div>
+                            <div class="mobile-menu-subtitle">ご依頼・お問い合わせ</div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="mobile-menu-symbollogo-wrapper">
+                    <img src="img/logo/logo_symbol_wh_A.png" alt="つながるわーくのシンボルのロゴ">
+                </div>
+                <div class="mobile-menu-textlogo-wrapper">
+                    <img src="img/logo/logo_text_wh.png" alt="つながるわーくの文字のロゴ">
+                </div>
             </div>
             <!-- End Mogusann -->
-        </div>
+        </nav>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- 自身のお名前のコメントのFrom〜End間に作成したJSを読み込んでください -->
+    <!-- From mogu -->
+    <script src="./js/navigation.js"></script>
+    <!-- End mogu -->
+    <!-- From kitamu -->
+    <script src="js/btn-top.js"></script>
+    <!-- End kitamu -->
+    <!-- From sasakisan -->
+    <!-- End sasakisan -->
+    <!-- From tomysan -->
+    <!-- End tomysan -->
 </body>
 
 </html>
