@@ -1,0 +1,57 @@
+body {
+  overflow-x: hidden;
+}
+.video-PC{
+  display: none;
+}
+.video-SP{
+  object-fit:fill;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0%;
+  z-index: -100;
+ }
+.keyvisual {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin-left: -20px;
+  overflow: hidden;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .video-SP{
+    display: none;
+  }
+  .keyvisual {
+    margin-left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .video-PC{
+  object-fit: fill;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  top: -25%;
+  left: 0%;
+  z-index: -100;
+  }
+}
+/* PC */
+@media screen and (min-width: 1025px) {
+.video-PC{
+top: 0%;
+}
+}
