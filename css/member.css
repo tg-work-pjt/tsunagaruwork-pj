@@ -1,0 +1,306 @@
+.member{
+    text-align: left;
+    margin-top: 2708px;
+    position: relative;
+}
+.member__header{
+    margin-bottom: 5.4rem;
+}
+.member__title-wrapper{
+    margin-bottom: 3rem;
+    padding-bottom: 7.15rem;
+}
+.member__subtitle {
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: bold;
+}
+.member__title{
+    font-size: 6.0rem;
+    color: transparent;
+    text-stroke: 1px #EA5403;
+    -webkit-text-stroke: 1px #EA5403;
+    word-break : break-all;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    position: absolute;
+    margin-bottom: 0rem;
+    white-space: nowrap;
+}
+.member-explanation{
+    font-size: 1.6rem;
+    width: 100%;
+    line-height: 1.9;
+    font-feature-settings: "palt";
+	letter-spacing: 0.18rem;
+    font-weight: bold;
+}
+.member-explanation__partner{
+    color: #EA5403;
+}
+.member__caption{
+    font-size: 2.0rem;
+    color: #EA5403;
+    border-bottom:solid #EA5403 0.1rem;
+    margin-bottom: 0.38rem;
+}
+.member-individual{
+    margin-bottom: 5.5rem;
+}
+.member-individual__heading{
+    color: #EA5403;
+    display: flex;
+    border-bottom:solid #EA5403 0.1rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    font-feature-settings: "palt";
+	letter-spacing: 0.08rem;
+    white-space: nowrap;
+}
+.member-individual__name-hiragana{
+    font-feature-settings: "palt";
+	letter-spacing: 0.2rem;
+}
+.member-uppercase{
+    text-transform: uppercase;
+}
+.member-capitalize{
+    text-transform: capitalize;
+}
+.member-individual__work{
+    width: calc(100% - 0.6rem);
+    margin-bottom: 2.1rem;
+    position: relative;
+    display: block;
+}
+.member-individual__vertical-frame{
+    width: 0.3rem;
+    height: 100%;
+    background-color: #EA5403;
+    position: absolute;
+    border-radius: 0.3rem;
+    right: -0.5rem;
+    top: 0.7rem;
+}
+.member-individual__horizontal-frame{
+    height: 0.3rem;
+    width: 100%;
+    background-color: #EA5403;
+    border-radius: 0.3rem;
+    margin-top: 0.7rem;
+    margin-left: 0.7rem;
+    position: absolute;
+    bottom: -0.7rem;
+    right: -0.5rem;
+}
+.member-individual__work-image-wrapper{
+    overflow:hidden;
+}
+.member-individual__work-image{
+    display: block;
+    width: 100%;
+    transition: 0.2s;
+}
+.member-individual__work-image:hover{
+    transform-origin: center;
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+.member-individual__caricature{
+    width: 6.204rem;
+    margin-left: 0.6rem;
+}
+.member-individual__caricature img{
+    width: 100%;
+}
+.member-individual__profile{
+    display: flex;
+    position: relative;
+}
+.member-individual__sns{
+    position: absolute;
+    right: 1.3rem;
+    display: flex;
+}
+.member-individual__sns a{
+    display: block;
+    width: 3.2rem;
+    margin-right: 1.6rem;
+}
+.member-individual__sns a:hover{
+    opacity: 0.7;
+}
+.member-individual__sns a:last-child{
+    margin-right: 0.2rem;
+}
+.member-individual__sns-twitter{
+    margin-top: 1.2rem;
+}
+a.member-individual__sns-instagram{
+    margin-top: 0.8rem;
+    width: 2.9rem;
+}
+.member-individual__sns-facebook{
+    margin-top: 1.2rem;
+}
+.member-individual__sns img{
+    display: block;
+    width: 100%
+}
+.member-individual__author{
+    margin-left: 1.18rem;
+    margin-top: 1.75rem;
+    font-size: 2.0rem;
+}
+.member__workimg{
+    width: 100%;
+}
+.member-individual__skill-list{
+    display: flex;
+    flex-wrap : wrap;
+    margin-bottom: 0rem;
+}
+.member-individual__skill-item{
+    border:solid #EA5403 0.1rem;
+    border-radius: 3rem;
+    padding: 0.5rem 1.2rem;
+    color: #EA5403;
+    margin-right: 0.6rem;
+    margin-top: 0.8rem;
+    font-size: 1.3rem;
+}
+.member-individual__skill-item-movie{
+    padding: 0.5rem 2rem;
+}
+.member__sp-gunya1{
+    background-image: url(../img/parts/background/tw_gunya_sp/gunya_004.png);
+    position: absolute;
+    padding-bottom: calc((100% + 40px)*1122/758);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    z-index: -10;
+    left: -2.0rem;
+    width: calc(100% + 40px);
+    top: -3.5rem;
+}
+.member__sp-gunya2{
+    background-image: url(../img/parts/background/tw_gunya_sp/gunya_005.png);
+    position: absolute;
+    padding-bottom: calc((100% + 4rem)*378/376);
+    background-size: 100% auto; 
+    background-repeat: no-repeat;
+    z-index: -11;
+    left: -2.0rem;
+    width: calc(100% + 4rem);
+    top: 579rem;
+}
+.member__pc-gunya1{
+    background-image: url(../img/parts/background/bk_gunya_pc/gunya_004.png);
+    position: absolute;
+    padding-bottom: calc(62.891344%*1046/1331);
+    background-size: 100% auto; 
+    background-repeat: no-repeat;
+    z-index: -12;
+    width: calc(62.891344%);
+    bottom: 30rem;
+    right: -4rem;
+}
+.member__pc{
+    display: none;
+}
+.member__sp{
+    display: block;
+}
+@media screen and ( max-width:370px) {
+    /* 幅が362px以下だと、タイトル部分がはみ出てしまうので、字間を狭める */
+    .member__title{
+        letter-spacing: 0rem;
+    }
+    .member-individual__title {
+        white-space: normal;
+    }
+}
+@media screen and ( max-width:355px) {
+    /* タイトル部分や作品タイトルがどうしてもがはみ出てしまうので、このサイズより下回る場合は折り返す */
+    .member__title{
+        letter-spacing: 0rem;
+        white-space: normal;
+        position: relative;
+    }
+    .member__title-wrapper{
+        padding-bottom: 0rem;
+    }
+    .member-individual__title {
+        white-space: normal;
+    }
+    .member-individual__sns{
+        right: -0.3rem;
+        margin-top: 1rem;
+    }
+}
+@media screen and (min-width:768px) {
+    .member__pc{
+        display: block;
+    }
+    .member__sp{
+        display: none;
+    }
+    .member__header{
+        margin-bottom: 9.5rem;
+    }
+    .member__title-wrapper{
+        margin-bottom: 4.2rem;
+        padding-bottom: 11.8rem;
+    }
+    .member__subtitle {
+        font-size: 1.6rem;
+        font-feature-settings: "palt";
+        letter-spacing: 0.3rem;
+        margin-left: 0.5rem;
+    }
+    .member__title{
+        font-size: 10rem;
+        letter-spacing: 0.5rem;
+        left: -0.5rem;
+    }
+    .member-explanation{
+        font-size: 2rem;
+        width: 100%;
+        line-height: 1.8;
+        font-feature-settings: "palt";
+        letter-spacing: 0.25rem;
+        margin-left: 0.8rem;
+    }
+    .member__contents{
+        display: flex;
+        flex-wrap : wrap;
+    }
+    .member-individual{
+        margin-bottom: 4.8rem;
+        width: 33.333%;
+        padding: 0 0.8rem;
+    }
+    .member-individual__work{
+        margin-bottom: 2rem;
+    }
+    .member-individual__skill-list{
+        height: 7.9rem;
+    }
+    .member-individual__skill-item{
+        height: 3.05rem;
+    }
+}
+@media screen and (min-width:768px) and ( max-width:950px) {
+    /* タブレット用に微調整 */
+    .member-individual{
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+@media screen and (min-width:950px) and ( max-width:1330px) {
+    /* 作品を3列にすると、一部改行が履入ってしまいデザインが崩れるためこの区間は２列 */
+    .member-individual{
+        width: 50%;
+        padding: 0 1rem;
+    }
+}
