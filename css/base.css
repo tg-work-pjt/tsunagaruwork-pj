@@ -4,6 +4,7 @@ html {
   /* 1rem = 10px */
 }
 body {
+  overflow-x: hidden;
   box-sizing: border-box;
   font-family: "Montserrat", "Yu Gothic", "ヒラギノ角ゴシック Pro",
     "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", "HiraKakuProN-W3",
