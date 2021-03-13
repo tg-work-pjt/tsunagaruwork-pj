@@ -33,12 +33,12 @@
 }
 .feature-header__title--size-small {
     display: block;
-    font-size: min(max(12px, calc(0.75rem + ((1vw - 3.75px) * 0.8073))), 20px);
+    font-size: 1.2rem;
     font-weight: bold;
     line-height: 1.3;
 }
 .feature-header__title--size-big {
-    font-size: min(max(30px, calc(1.875rem + ((1vw - 2px) * 22.8571))), 70px);
+    font-size: 6.0rem;
     font-style: normal;
     color: #fff;
     -webkit-text-stroke: 1px #EA5504;
@@ -46,22 +46,20 @@
     letter-spacing: 3px;
 }
 .feature-header__subtitle {
-    font-size: min(max(16px, calc(1rem + ((1vw - 3.75px) * 0.9082))), 25px);
+    font-size: 1.6rem;
     font-weight: bold;
     margin-top: 37px;
     letter-spacing: 0.8px;
     line-height: 1.8;
 }
 .feature-header__description {
-    font-size: min(max(14px, calc(0.875rem + ((1vw - 3.75px) * 0.7064))), 21px);
-}
-.feature-header__subtitle--color {
-    color: #EA5504;
-}
-.feature-header__description {
+    font-size: 1.4rem;
     line-height: 1.75;
     margin-top: 27px;
     letter-spacing: -0.1px;
+}
+.feature-header__subtitle--color {
+    color: #EA5504;
 }
 .feature-contents__list {
     margin-top: 115px
@@ -98,13 +96,13 @@
 }
 .feature-contents__title {
     text-align: center;
-    font-size: min(max(12px, calc(0.75rem + ((1vw - 3.2px) * 29.0909))), 28px);
+    font-size: 2.4rem;
     font-weight: bold;
     margin-bottom: 8%;
     letter-spacing: 1px;
 }
 .feature-contents__description {
-    font-size: min(max(10px, calc(0.625rem + ((1vw - 3.2px) * 14.5455))), 18px);
+    font-size: 1.4rem;
     line-height: 1.7;
     letter-spacing: 0.8px;
     text-align: justify;
@@ -112,7 +110,10 @@
 .feature-contents__contact {
     margin-top: -40%;
     position: relative;
-    z-index: 1000;
+    z-index: 105;
+}
+.feature-contents__contact-text{
+    margin-bottom: 178px;
 }
 .feature-contents__link {
     text-decoration: underline;
@@ -139,12 +140,13 @@
     line-height: 1.54;
 }
 .feature-header__title--size-big {
-    font-size: min(max(60px, calc(3.75rem + ((1vw - 3.75px) * 6.3572))), 123px);
+    font-size: 10rem;
     display: inline-block;
     letter-spacing: 1px;
     text-indent: -7px;
 }
 .feature-header__subtitle {
+    font-size: 2rem;
     letter-spacing: 1.8px;
     margin-top: 51px
 }
@@ -152,6 +154,7 @@
     display: block;
 }
 .feature-header__description {
+    font-size: 1.6rem;
     letter-spacing: 0.67px;
     margin-top: 32px;
 }
@@ -188,10 +191,10 @@
     left: calc(50% + 5px)
 }
 .feature-contents__title {
-    font-size: min(max(14px, calc(0.875rem + ((1vw - 7.68px) * 2.8428))), 31px);
+    font-size: 2.6rem;
 }
 .feature-contents__description {
-    font-size: min(max(10px, calc(0.625rem + ((1vw - 7.68px) * 1.3378))), 18px);
+    font-size: 1.4rem;
 }
 
 .feature-contents__contact {
