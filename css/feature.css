@@ -119,6 +119,18 @@
     text-decoration: underline;
     color: #222;
 }
+@media screen and ( max-width:370px) {
+    /* 幅が362px以下だと、タイトル部分がはみ出てしまうので、字間を狭める */
+    .feature-header__title--size-big{
+        letter-spacing: -0.1rem;
+    }
+}
+@media screen and ( max-width:355px) {
+    /* タイトル部分や作品タイトルがどうしてもがはみ出てしまうので、このサイズより下回る場合は折り返す */
+    .feature-contents__contact-text{
+        letter-spacing: 0.1rem;
+    }
+}
 
 @media screen and (min-width:768px) {
 .feature__pcbg {
