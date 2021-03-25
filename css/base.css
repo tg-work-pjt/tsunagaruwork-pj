@@ -6,8 +6,8 @@ html {
 body {
   overflow-x: hidden;
   box-sizing: border-box;
-  font-family: "Montserrat", "Yu Gothic", "ヒラギノ角ゴシック Pro",
-    "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", "HiraKakuProN-W3",
+  font-family: "Montserrat", "Noto Sans Japanese","Yu Gothic", "ヒラギノ角ゴシック Pro",
+    "Hiragino Kaku Gothic ProN",  "HiraKakuProN-W3",
     "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo", "メイリオ",
     "MSPゴシック", sans-serif;
 }
