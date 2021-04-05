@@ -164,9 +164,9 @@
     }
     .feature-background {
       background-image: url(../img/parts/background/bk_gunya_pc/gunya_002.png);
-      transform: translateY(-40%);
+      transform: translateY(-2%);
       background-size: 100%;
-      height: 170%;
+      height: 100%;
     }
     .feature-contents {
       padding: 0 140px;
@@ -174,10 +174,7 @@
     .feature-inner {
       padding: 0 1%;
     }
-    .feature-background {
-      transform: translateY(-10%);
-      height: 200%;
-    }
+ 
     .feature-header__title--size-small {
       font-size: 1.6rem;
       line-height: 1.5;
@@ -307,6 +304,12 @@
           .feature-inner{
               padding: 0 140px;
           } 
+          .feature-background {
+            background-image: url(../img/parts/background/bk_gunya_pc/gunya_002.png);
+            transform: translateY(-10%);
+            background-size: 100%;
+            height: 100%;
+          }
           .feature-contents__contact {
               margin-top: -5%;
               right: 0;
