@@ -46,7 +46,7 @@ body{
   }
 .PRIVACY-inner {
     padding: 0 20px;
-    position: relative;
+    /* position: relative; */
 }
 
 .PRIVACY-header__title {
@@ -71,8 +71,15 @@ body{
     margin-bottom: 117px;
 }
 .PRIVACY__link {
+    position: relative;
     color: black;
     text-decoration: underline;
+}
+.link{
+    display: block;
+    font-size: 14px;
+    line-height: 2.14;
+    text-align: left;
 }
 @media screen and (min-width:768px) {
     .PRIVACY-inner {
