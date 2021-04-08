@@ -2,7 +2,7 @@
     margin: 0 calc(50% - 50vw);
     font-size: 1.4rem;
     font-family: "Noto Sans Japanese";
-    background-image: url(../img/parts/background/tw_gunya_sp/gunya_006_01.png);
+    background-image: url(../img/parts/background/tw_gunya_sp/gunya_006_001.png);
     background-repeat: no-repeat;
     background-size: 100% calc(100% - 35px);
     background-position: 0 100%;
@@ -59,7 +59,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 0.5px;
-    margin-top: 34px;
+    margin-top: 28px;
     line-height: 1.7;
 }
 .about__header-description {
@@ -87,6 +87,7 @@
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
     transform: rotate(45deg) translateY(-50%);
+    
 }
 .about__contact-link-text {
    width: 84%;
@@ -264,13 +265,14 @@
     flex: 0 0 54%
 }
 .about__contact {
-   flex: 0 0 43%
+   flex: 0 0 23%
 }
 .about__contact-link {
     background: url(../img/parts/contact_bg.png) 50% 50% no-repeat;
     background-size: 100% 100%;
     margin-top: 31px;
     padding: 28px 32px;
+    max-width: 503px;
 }
 .about__contact-link-text {
    width: 85%;
