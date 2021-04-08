@@ -1,7 +1,7 @@
 /* body {
   overflow-x: hidden;
 } */
-.video-PC{
+.video-SP2,.video-PC{
   display: none;
 }
 .video-SP{
@@ -24,10 +24,14 @@
   margin-left: -20px;
   overflow: hidden;
 }
-
+@media screen and (min-width: 414px){
+  .video-SP,.video-PC{
+    display: none;
+  }
+}
 /* tablet */
 @media screen and (min-width: 768px) {
-  .video-SP{
+  .video-SP,.video-SP2{
     display: none;
   }
   .keyvisual {
