@@ -1,6 +1,7 @@
 .member{
     text-align: left;
     position: relative;
+    margin: 0 20px;
 }
 .member__header{
     margin-bottom: 5.4rem;
