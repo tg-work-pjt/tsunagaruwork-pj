@@ -1,7 +1,6 @@
 .about {
     margin: 288px calc(50% - 50vw);
     font-size: 1.4rem;
-    font-family: "Noto Sans Japanese";
     background-image: url(../img/parts/background/tw_gunya_sp/gunya_006_001.png);
     background-repeat: no-repeat;
     background-size: 100% calc(100% - 35px);
@@ -27,6 +26,7 @@
     left: 0;
     width: 100%;
     transform: translateY(100%);
+    
 }
 .about_inner {
     padding: 0 20px;
@@ -34,10 +34,12 @@
 .about__header {
     position: relative;
     z-index: 100;
+    
 }
 .about_br_sponly {
     display: inline;
 }
+.about-top
 .about__header-title {
     line-height: 1.15;
     font-size: 1.2rem;
@@ -45,6 +47,7 @@
     font-weight: bold;
     letter-spacing: 0.5px;
     margin: 0;
+    background-color: #fff;
 }
 
 .about__header-title_big {
@@ -53,7 +56,6 @@
     font-style: normal;
     color: #fff;
     -webkit-text-stroke: 1px #EA5504;
-    font-family: "Montserrat";
 }
 .about__header-subtitle {
     font-size: 1.8rem;
@@ -61,6 +63,7 @@
     letter-spacing: 0.5px;
     margin-top: 28px;
     line-height: 1.7;
+    
 }
 .about__header-description {
     margin-top: 25px;
@@ -96,7 +99,6 @@
     font-weight: 600;
     font-size: 2.0rem;
     color: #000;
-    font-family: "Montserrat";
 }
 .about__contact-link_small {
     font-weight: normal;
@@ -129,7 +131,6 @@
     justify-content: center;
     font-style: normal;
     font-weight: bold;
-    font-family: "Montserrat";
     letter-spacing: 1px;
 }
 .about__contents-title_color:before,

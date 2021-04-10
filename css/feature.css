@@ -306,9 +306,13 @@
           } 
           .feature-background {
             background-image: url(../img/parts/background/bk_gunya_pc/gunya_002.png);
-            transform: translateY(-10%);
-            background-size: 100%;
-            height: 100%;
+            background-position: center center;
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            padding-top: 97.5109%;
+            transform: translateY(-35%);
+            overflow-x: hidden;
           }
           .feature-contents__contact {
               margin-top: -5%;
