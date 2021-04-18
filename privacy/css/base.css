@@ -1,0 +1,30 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%; /*16px*62.5%=10px*/
+  /* 1rem = 10px */
+}
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Yu Gothic", "ヒラギノ角ゴシック Pro",
+    "Hiragino Kaku Gothic ProN", "Noto Sans Japanese", "HiraKakuProN-W3",
+    "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo", "メイリオ",
+    "MSPゴシック", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+#container{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media screen and (min-width:768px) {
+  /*PC版のスタイルはここに記載する*/
+  #container{
+    margin-left: 140px;
+    margin-right: 140px;
+  }
+}

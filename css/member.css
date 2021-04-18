@@ -1,7 +1,7 @@
 .member{
     text-align: left;
-    margin-top: 2708px;
     position: relative;
+   
 }
 .member__header{
     margin-bottom: 5.4rem;
@@ -239,6 +239,9 @@ a.member-individual__sns-instagram{
     }
 }
 @media screen and (min-width:768px) {
+    .member{
+        margin-top: 200px;
+    }
     .member__pc{
         display: block;
     }

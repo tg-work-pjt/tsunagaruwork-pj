@@ -1,0 +1,21 @@
+/* body {
+  overflow-x: hidden;
+} */
+.keyvisual {
+  width: 100vw;
+  height:18vh;
+  position: relative;
+  margin-left: -20px;
+  overflow: hidden;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+
+  .keyvisual {
+    margin-left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+}

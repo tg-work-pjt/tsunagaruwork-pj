@@ -1,0 +1,48 @@
+.pagetop{
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+
+    
+.pagetop{
+    display: block;
+    position: relative;
+    width: 100vw;
+    margin: 0;
+}
+
+.pagetop>a::before{
+    content: '';
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    background-size: contain;
+    transform: translate(-50%,-50%);
+    display: block;
+    background-image: url("../img/topbutton/topbutton_gunya.png");
+    width: 50px;
+    height: 50.5px;
+    background-repeat: no-repeat;
+    z-index: 20;
+
+}
+
+.chaverin{
+    position: fixed;
+    display: block;
+   object-fit: cover;
+    right: 27px;
+    bottom: 125px;
+    transform: translate(-50%,-50%)scale(0.5,0.5);
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 40;
+    margin: 0;
+    /* background-color: #ea5504; */
+}
+
+.chaverin:hover{
+    bottom: 135px;
+}
+}
