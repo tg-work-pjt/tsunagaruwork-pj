@@ -1,7 +1,6 @@
 .about {
     margin: 288px calc(50% - 50vw);
     font-size: 1.4rem;
-    font-family: "Noto Sans Japanese";
     background-image: url(../img/parts/background/tw_gunya_sp/gunya_006_001.png);
     background-repeat: no-repeat;
     background-size: 100% calc(100% - 35px);
@@ -20,6 +19,7 @@
     left: 0;
     width: 100%;
     transform: translateY(calc(-100% + 35px));
+    z-index: -100;
 }
 .about_section-spbg-bottom {
     position: absolute;
@@ -27,6 +27,7 @@
     left: 0;
     width: 100%;
     transform: translateY(100%);
+    z-index: -100;
 }
 .about_inner {
     padding: 0 20px;
@@ -53,7 +54,6 @@
     font-style: normal;
     color: #fff;
     -webkit-text-stroke: 1px #EA5504;
-    font-family: "Montserrat";
 }
 .about__header-subtitle {
     font-size: 1.8rem;
@@ -96,7 +96,7 @@
     font-weight: 600;
     font-size: 2.0rem;
     color: #000;
-    font-family: "Montserrat";
+    
 }
 .about__contact-link_small {
     font-weight: normal;
@@ -129,7 +129,6 @@
     justify-content: center;
     font-style: normal;
     font-weight: bold;
-    font-family: "Montserrat";
     letter-spacing: 1px;
 }
 .about__contents-title_color:before,
@@ -245,7 +244,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(-100%)
+    transform: translateY(-100%);
+    z-index: -100;
 }
 .about_section-pcbg-bottom {
     display: block;

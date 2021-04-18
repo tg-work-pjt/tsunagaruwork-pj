@@ -89,3 +89,13 @@ footer{
     padding-bottom: 36px;
   }
 }
+@media screen and (min-width:1000px){
+  footer{
+    margin-top: 480px;
+  }
+}
+@media screen and (min-width:1460px){
+  footer{
+    margin-top: 0px;
+  }
+}
