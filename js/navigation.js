@@ -16,11 +16,11 @@ class SwitchNavigation{
   _toggleInactiveStyle(){
     //初回にmobile-menu_inactiveをhtmlに付与したままだと、ページ表示時にメニューが消えるアニメーションが見えてしまうため、
     //toggleとは別途実装する。
-    let isMenuActive = document.querySelector("#mobile-menu").classList.contains("mobile-menu_active");
+    let isMenuActive = this.object.menu.classList.contains("mobile-menu_active");
     if(isMenuActive){
-      document.querySelector("#mobile-menu").classList.remove("mobile-menu_inactive");
+      this.object.menu.classList.remove("mobile-menu_inactive");
     }else{
-        document.querySelector("#mobile-menu").classList.add("mobile-menu_inactive");
+      this.object.menu.classList.add("mobile-menu_inactive");
     }
   }
   _addEventListeners(){
